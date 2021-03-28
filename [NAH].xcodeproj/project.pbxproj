@@ -15,6 +15,12 @@
 		0246360F260126A1007D5D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0246360D260126A1007D5D1D /* LaunchScreen.storyboard */; };
 		0246361A260126A2007D5D1D /* _NAH_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463619260126A2007D5D1D /* _NAH_Tests.swift */; };
 		02463625260126A2007D5D1D /* _NAH_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463624260126A2007D5D1D /* _NAH_UITests.swift */; };
+		02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463635260129C7007D5D1D /* GramaticaTableViewController.swift */; };
+		0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246363A260130A7007D5D1D /* LeccionViewController.swift */; };
+		024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */; };
+		024CFEC026102A2C00A4B8A8 /* PalabraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024CFEBE26102A2C00A4B8A8 /* PalabraTableViewCell.xib */; };
+		02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */; };
+		02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A94260E60FE00416E4E /* Palabra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		02463620260126A2007D5D1D /* [NAH]UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[NAH]UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02463624260126A2007D5D1D /* _NAH_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _NAH_UITests.swift; sourceTree = "<group>"; };
 		02463626260126A2007D5D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02463635260129C7007D5D1D /* GramaticaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GramaticaTableViewController.swift; sourceTree = "<group>"; };
+		0246363A260130A7007D5D1D /* LeccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeccionViewController.swift; sourceTree = "<group>"; };
+		024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabraTableViewCell.swift; sourceTree = "<group>"; };
+		024CFEBE26102A2C00A4B8A8 /* PalabraTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PalabraTableViewCell.xib; sourceTree = "<group>"; };
+		02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlosarioTableViewController.swift; sourceTree = "<group>"; };
+		02FF7A94260E60FE00416E4E /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		02463601260126A1007D5D1D /* [NAH] */ = {
 			isa = PBXGroup;
 			children = (
+				024CFEBC261029FE00A4B8A8 /* Cells */,
+				02FF7A93260E60EF00416E4E /* Models */,
 				02463602260126A1007D5D1D /* AppDelegate.swift */,
 				02463604260126A1007D5D1D /* SceneDelegate.swift */,
 				02463606260126A1007D5D1D /* ViewController.swift */,
@@ -106,6 +120,9 @@
 				0246360B260126A1007D5D1D /* Assets.xcassets */,
 				0246360D260126A1007D5D1D /* LaunchScreen.storyboard */,
 				02463610260126A1007D5D1D /* Info.plist */,
+				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
+				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
+				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -126,6 +143,23 @@
 				02463626260126A2007D5D1D /* Info.plist */,
 			);
 			path = "[NAH]UITests";
+			sourceTree = "<group>";
+		};
+		024CFEBC261029FE00A4B8A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */,
+				024CFEBE26102A2C00A4B8A8 /* PalabraTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		02FF7A93260E60EF00416E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02FF7A94260E60FE00416E4E /* Palabra.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +268,7 @@
 				0246360F260126A1007D5D1D /* LaunchScreen.storyboard in Resources */,
 				0246360C260126A1007D5D1D /* Assets.xcassets in Resources */,
 				0246360A260126A1007D5D1D /* Main.storyboard in Resources */,
+				024CFEC026102A2C00A4B8A8 /* PalabraTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
+				0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */,
+				02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */,
+				024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */,
 				02463603260126A1007D5D1D /* AppDelegate.swift in Sources */,
 				02463605260126A1007D5D1D /* SceneDelegate.swift in Sources */,
+				02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */,
+				02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
