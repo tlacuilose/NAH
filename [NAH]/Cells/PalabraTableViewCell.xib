@@ -38,7 +38,7 @@
                                         <rect key="frame" x="99" y="0.0" width="215" height="77"/>
                                         <state key="normal" title="Mostrar"/>
                                         <connections>
-                                            <action selector="verTraduccion:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J3D-FS-vFU"/>
+                                            <action selector="verTraduccion:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2tH-AP-iGe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -55,9 +55,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="espanolLabel" destination="6Wn-0r-Ae0" id="XiU-gS-en2"/>
-                <outlet property="nahuatlLabel" destination="SVi-uR-WfS" id="s1m-Ws-VdB"/>
-                <outlet property="verButton" destination="y9O-6c-oPO" id="oTX-dJ-ubd"/>
+                <outlet property="espanolLabel" destination="6Wn-0r-Ae0" id="FEO-Te-0TD"/>
+                <outlet property="nahuatlLabel" destination="SVi-uR-WfS" id="QvU-Xh-EFV"/>
+                <outlet property="verButton" destination="y9O-6c-oPO" id="Onl-PG-DGF"/>
             </connections>
             <point key="canvasLocation" x="136" y="32"/>
         </tableViewCell>

@@ -10,14 +10,25 @@ import UIKit
 class LeccionViewController: UIViewController {
     @IBOutlet weak var leccionAttributed: UILabel!
     
-    var titleLeccion: String = "Leccion no disponible"
+    @IBOutlet weak var vocabularioView: UIView!
+    @IBOutlet weak var vocabularioTable: UITableView!
+    
+    @IBOutlet weak var gramaticaView: UIView!
+    
+    @IBOutlet weak var ejerciciosView: UIView!
+    
+    
+    let jsonURL = "http://martinmolina.com.mx/202111/equipo5/data/vocaleccion.json"
+    var vocabulario: [Palabra]?
+    var leccion: Leccion?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         // FIXME: HTML example for lections
-        
+        /*
         let html = """
         <!DOCTYPE html>
         <html>
@@ -35,19 +46,31 @@ class LeccionViewController: UIViewController {
         if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil) {
             leccionAttributed.attributedText = attributedString
         }
-        self.navigationItem.title = self.titleLeccion
+        */
+        
+        if let url = URL(string: self.jsonURL) {
+            do {
+                let data = try Data(contentsOf: url)
+                self.vocabulario = try JSONDecoder().decode([Palabra].self, from: data)
+            } catch {
+                print("Glosario contents could not be loaded")
+            }
+        } else {
+            print("The URL for glosario was bad.")
+        }
+        self.navigationItem.title = self.leccion?.nombre ?? "Leccion no encontrada"
+        
+        self.vocabularioTable.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
+        self.vocabularioTable.delegate = self
+        self.vocabularioTable.dataSource = self
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func changeView(_ sender: UISegmentedControl) {
+        let selection = sender.selectedSegmentIndex
+        self.vocabularioView.isHidden = (selection != 0)
+        self.gramaticaView.isHidden = (selection != 1)
+        self.ejerciciosView.isHidden = (selection != 2)
     }
-    */
-
+    
 }

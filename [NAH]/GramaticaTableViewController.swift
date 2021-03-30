@@ -63,10 +63,9 @@ class GramaticaTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if let indexCell = self.tableView.indexPathForSelectedRow, let idLeccion = self.lecciones?[indexCell.row].id {
+        if let indexCell = self.tableView.indexPathForSelectedRow, let leccion = self.lecciones?[indexCell.row] {
             let detailView = segue.destination as! LeccionViewController
-            let detailTitle = "Detalle Leccion \(idLeccion)"
-            detailView.titleLeccion = detailTitle
+            detailView.leccion = leccion
         }
     }
 }
