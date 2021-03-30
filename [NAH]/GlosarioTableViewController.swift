@@ -77,12 +77,19 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
         return self.sections?[section] ?? ""
     }
     
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UITableViewHeaderFooterView()
-        headerView.contentView.backgroundColor = UIColor.yellow
-        return headerView
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        
+        header.contentView.backgroundColor = UIColor(named: "AccentColor")
+        header.textLabel?.textColor = .white
     }
+    
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UITableViewHeaderFooterView()
+//        headerView.contentView.backgroundColor = UIColor(named: "AccentColor")
+//        headerView.textLabel?.
+//        return headerView
+//    }
 
     /*
     // Override to support conditional editing of the table view.
