@@ -8,14 +8,35 @@
 import UIKit
 
 class LeccionViewController: UIViewController {
-    @IBOutlet weak var leccionTitle: UILabel!
+    @IBOutlet weak var leccionAttributed: UILabel!
     
     var titleLeccion: String = "Leccion no disponible"
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        leccionTitle.text = titleLeccion
+        
+        // FIXME: HTML example for lections
+        
+        let html = """
+        <!DOCTYPE html>
+        <html>
+          <body>
+            <p>Paragraph</p>
+            <li>
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+            </ul>
+          </body>
+        </html>
+        """
+        let data = Data(html.utf8)
+        if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil) {
+            leccionAttributed.attributedText = attributedString
+        }
+        self.navigationItem.title = self.titleLeccion
+        
     }
     
 
