@@ -8,9 +8,23 @@
 import UIKit
 
 class GramaticaTableViewController: UITableViewController {
+    
+    let jsonURL = "http://martinmolina.com.mx/202111/equipo5/data/leccionesgramatica.json"
+    var lecciones: [Leccion]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let url = URL(string: self.jsonURL) {
+            do {
+                let data = try Data(contentsOf: url)
+                self.lecciones = try JSONDecoder().decode([Leccion].self, from: data)
+            } catch {
+                print("Lecciones contents could not be loaded")
+            }
+        } else {
+            print("The URL for lecciones was bad.")
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,17 +42,18 @@ class GramaticaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 30
+        return self.lecciones?.count ?? 0
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "leccionTableCell", for: indexPath)
 
-        
-        // Configure the cell...
-        cell.textLabel?.text = "Leccion \(indexPath.row)"
-        
+        if let nombreLeccion = self.lecciones?[indexPath.row].nombre {
+            // Configure the cell...
+            cell.textLabel?.text = nombreLeccion
+        }
+    
         return cell
     }
     
@@ -48,10 +63,9 @@ class GramaticaTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if let indexCell = self.tableView.indexPathForSelectedRow {
+        if let indexCell = self.tableView.indexPathForSelectedRow, let leccion = self.lecciones?[indexCell.row] {
             let detailView = segue.destination as! LeccionViewController
-            let detailTitle = "Detalle Leccion \(indexCell.row)"
-            detailView.titleLeccion = detailTitle
+            detailView.leccion = leccion
         }
     }
 }

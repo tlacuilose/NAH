@@ -23,7 +23,7 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
         if let url = URL(string: self.jsonURL) {
             do {
                 let data = try Data(contentsOf: url)
-                palabras = try JSONDecoder().decode([Palabra].self, from: data)
+                self.palabras = try JSONDecoder().decode([Palabra].self, from: data)
                 (self.sections , self.separatedPalabras) = findSections(in: self.palabras!)
                 
                 // Search flow
@@ -38,10 +38,10 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                 
                 tableView.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
             } catch {
-                print("Contents could not be loaded")
+                print("Glosario contents could not be loaded")
             }
         } else {
-            print("The URL was bad.")
+            print("The URL for glosario was bad.")
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
