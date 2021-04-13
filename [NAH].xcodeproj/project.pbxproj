@@ -21,6 +21,7 @@
 		02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463635260129C7007D5D1D /* GramaticaTableViewController.swift */; };
 		0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246363A260130A7007D5D1D /* LeccionViewController.swift */; };
 		024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */; };
+		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
 		02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */; };
 		02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A94260E60FE00416E4E /* Palabra.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		02463635260129C7007D5D1D /* GramaticaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GramaticaTableViewController.swift; sourceTree = "<group>"; };
 		0246363A260130A7007D5D1D /* LeccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeccionViewController.swift; sourceTree = "<group>"; };
 		024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabraTableViewCell.swift; sourceTree = "<group>"; };
+		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlosarioTableViewController.swift; sourceTree = "<group>"; };
 		02FF7A94260E60FE00416E4E /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
 				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
 				0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */,
+				02B8F20C261CCED2006E847A /* MapaViewController.swift */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */,
 				0233C9022613AEBD001EA182 /* Leccion.swift in Sources */,
 				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
 				0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */,

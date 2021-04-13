@@ -108,7 +108,7 @@
         <!--Habitantes de náhuatl en tu estado-->
         <scene sceneID="pQs-ks-naK">
             <objects>
-                <viewController id="Wuf-dF-z3h" sceneMemberID="viewController">
+                <viewController id="Wuf-dF-z3h" customClass="MapaViewController" customModule="_NAH_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONR-wt-6rL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,17 +116,27 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.Mapa" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-C0-k3p">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q3A-RK-fvI">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jan-N9-MMu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jan-N9-MMu" firstAttribute="bottom" secondItem="Q3A-RK-fvI" secondAttribute="bottom" id="2rL-Yh-dWF"/>
                             <constraint firstItem="f0y-C0-k3p" firstAttribute="top" secondItem="jan-N9-MMu" secondAttribute="top" id="9Si-u7-L51"/>
                             <constraint firstItem="f0y-C0-k3p" firstAttribute="leading" secondItem="jan-N9-MMu" secondAttribute="leading" id="FWH-48-cGL"/>
+                            <constraint firstItem="jan-N9-MMu" firstAttribute="trailing" secondItem="Q3A-RK-fvI" secondAttribute="trailing" id="I3o-Jy-EQc"/>
+                            <constraint firstItem="Q3A-RK-fvI" firstAttribute="top" secondItem="jan-N9-MMu" secondAttribute="top" id="Q3q-Hn-toN"/>
                             <constraint firstItem="jan-N9-MMu" firstAttribute="trailing" secondItem="f0y-C0-k3p" secondAttribute="trailing" id="WDV-7p-ymW"/>
+                            <constraint firstItem="Q3A-RK-fvI" firstAttribute="leading" secondItem="jan-N9-MMu" secondAttribute="leading" id="XM4-vG-IbC"/>
                             <constraint firstItem="jan-N9-MMu" firstAttribute="bottom" secondItem="f0y-C0-k3p" secondAttribute="bottom" id="gGa-GI-jYL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Habitantes de náhuatl en tu estado" id="29u-3q-Oap"/>
+                    <connections>
+                        <outlet property="mapView" destination="Q3A-RK-fvI" id="ebs-g0-xoA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pB6-mx-kBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,29 +265,23 @@
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12. Gramatica Leccion" translatesAutoresizingMaskIntoConstraints="NO" id="fbP-ga-Mnb">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFx-sj-DUr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="Label">
-                                                                <attributes>
-                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" metaFont="system" size="36"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIq-gE-fEP">
+                                                        <rect key="frame" x="20" y="8" width="335" height="510"/>
+                                                        <color key="backgroundColor" red="1" green="0.74901960784313726" blue="0.24705882352941178" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <attributedString key="attributedText"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="iFx-sj-DUr" secondAttribute="trailing" id="Whx-3s-B7z"/>
+                                                    <constraint firstItem="GIq-gE-fEP" firstAttribute="top" secondItem="boq-3b-ip5" secondAttribute="top" constant="8" id="119-Pj-VOE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GIq-gE-fEP" secondAttribute="trailing" constant="20" id="9nx-tC-4IU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GIq-gE-fEP" secondAttribute="bottom" constant="8" id="Mkl-73-vLI"/>
                                                     <constraint firstItem="fbP-ga-Mnb" firstAttribute="leading" secondItem="boq-3b-ip5" secondAttribute="leading" id="drP-aS-Jj9"/>
                                                     <constraint firstItem="fbP-ga-Mnb" firstAttribute="top" secondItem="boq-3b-ip5" secondAttribute="top" id="fti-UT-JWi"/>
-                                                    <constraint firstItem="iFx-sj-DUr" firstAttribute="leading" secondItem="boq-3b-ip5" secondAttribute="leading" id="hc3-qh-44Z"/>
                                                     <constraint firstAttribute="trailing" secondItem="fbP-ga-Mnb" secondAttribute="trailing" id="iN9-ad-09f"/>
-                                                    <constraint firstAttribute="bottom" secondItem="iFx-sj-DUr" secondAttribute="bottom" id="nbu-B3-3al"/>
                                                     <constraint firstAttribute="bottom" secondItem="fbP-ga-Mnb" secondAttribute="bottom" id="xIO-yV-rw7"/>
-                                                    <constraint firstItem="iFx-sj-DUr" firstAttribute="top" secondItem="boq-3b-ip5" secondAttribute="top" id="zg1-u0-lTx"/>
+                                                    <constraint firstItem="GIq-gE-fEP" firstAttribute="leading" secondItem="boq-3b-ip5" secondAttribute="leading" constant="20" id="xQ0-m8-pnJ"/>
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNV-QM-dlv" userLabel="Ejercicios View">
@@ -328,7 +332,7 @@
                     <connections>
                         <outlet property="ejerciciosView" destination="KNV-QM-dlv" id="FsQ-Re-msX"/>
                         <outlet property="gramaticaView" destination="boq-3b-ip5" id="aJ6-lB-0fh"/>
-                        <outlet property="leccionAttributed" destination="iFx-sj-DUr" id="dzS-vW-Ip0"/>
+                        <outlet property="leccionText" destination="GIq-gE-fEP" id="FSh-UE-GgK"/>
                         <outlet property="vocabularioTable" destination="qbV-AT-Gyk" id="RvB-y4-lQ9"/>
                         <outlet property="vocabularioView" destination="cId-W7-0o3" id="m85-kH-ytt"/>
                     </connections>
