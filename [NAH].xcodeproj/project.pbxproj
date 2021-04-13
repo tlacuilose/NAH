@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0233C9022613AEBD001EA182 /* Leccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233C9012613AEBD001EA182 /* Leccion.swift */; };
+		0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */; };
+		0233C9172613BE29001EA182 /* PalabraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0233C9162613BE29001EA182 /* PalabraTableViewCell.xib */; };
 		02463603260126A1007D5D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463602260126A1007D5D1D /* AppDelegate.swift */; };
 		02463605260126A1007D5D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463604260126A1007D5D1D /* SceneDelegate.swift */; };
 		02463607260126A1007D5D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463606260126A1007D5D1D /* ViewController.swift */; };
@@ -18,7 +21,7 @@
 		02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463635260129C7007D5D1D /* GramaticaTableViewController.swift */; };
 		0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246363A260130A7007D5D1D /* LeccionViewController.swift */; };
 		024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */; };
-		024CFEC026102A2C00A4B8A8 /* PalabraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024CFEBE26102A2C00A4B8A8 /* PalabraTableViewCell.xib */; };
+		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
 		02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */; };
 		02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A94260E60FE00416E4E /* Palabra.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0233C9012613AEBD001EA182 /* Leccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leccion.swift; sourceTree = "<group>"; };
+		0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeccionViewController+Vocabulario.swift"; sourceTree = "<group>"; };
+		0233C9162613BE29001EA182 /* PalabraTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PalabraTableViewCell.xib; sourceTree = "<group>"; };
 		024635FF260126A1007D5D1D /* [NAH].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[NAH].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02463602260126A1007D5D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02463604260126A1007D5D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +64,7 @@
 		02463635260129C7007D5D1D /* GramaticaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GramaticaTableViewController.swift; sourceTree = "<group>"; };
 		0246363A260130A7007D5D1D /* LeccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeccionViewController.swift; sourceTree = "<group>"; };
 		024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabraTableViewCell.swift; sourceTree = "<group>"; };
-		024CFEBE26102A2C00A4B8A8 /* PalabraTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PalabraTableViewCell.xib; sourceTree = "<group>"; };
+		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlosarioTableViewController.swift; sourceTree = "<group>"; };
 		02FF7A94260E60FE00416E4E /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +129,8 @@
 				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
 				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
 				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
+				0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */,
+				02B8F20C261CCED2006E847A /* MapaViewController.swift */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -149,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */,
-				024CFEBE26102A2C00A4B8A8 /* PalabraTableViewCell.xib */,
+				0233C9162613BE29001EA182 /* PalabraTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				02FF7A94260E60FE00416E4E /* Palabra.swift */,
+				0233C9012613AEBD001EA182 /* Leccion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,7 +277,7 @@
 				0246360F260126A1007D5D1D /* LaunchScreen.storyboard in Resources */,
 				0246360C260126A1007D5D1D /* Assets.xcassets in Resources */,
 				0246360A260126A1007D5D1D /* Main.storyboard in Resources */,
-				024CFEC026102A2C00A4B8A8 /* PalabraTableViewCell.xib in Resources */,
+				0233C9172613BE29001EA182 /* PalabraTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */,
+				0233C9022613AEBD001EA182 /* Leccion.swift in Sources */,
 				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
+				0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */,
 				0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */,
 				02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */,
 				024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */,
@@ -486,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.-NAH-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -505,7 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.-NAH-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
