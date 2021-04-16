@@ -584,7 +584,7 @@ Jesus Yohualli Lopez</string>
             </objects>
             <point key="canvasLocation" x="677.60000000000002" y="983.65817091454278"/>
         </scene>
-        <!--Glosario Table View Controller-->
+        <!--Glosario-->
         <scene sceneID="US8-tZ-muH">
             <objects>
                 <tableViewController id="Eb1-qi-VLm" customClass="GlosarioTableViewController" customModule="_NAH_" customModuleProvider="target" sceneMemberID="viewController">
@@ -596,7 +596,7 @@ Jesus Yohualli Lopez</string>
                             <outlet property="delegate" destination="Eb1-qi-VLm" id="yw4-S9-7nQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="wkF-aa-IfP"/>
+                    <tabBarItem key="tabBarItem" title="Glosario" image="magnifyingglass" catalog="system" id="wkF-aa-IfP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQW-l5-H2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -656,6 +656,7 @@ Jesus Yohualli Lopez</string>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo-tec" width="823" height="248"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.74900001287460327" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
