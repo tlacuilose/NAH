@@ -412,7 +412,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm3-S6-RAy" userLabel="Album Button">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal">
                                                     <imageReference key="image" image="photo.fill.on.rectangle.fill" catalog="system" symbolScale="large"/>
                                                 </state>
                                                 <connections>
@@ -424,9 +424,16 @@
                                             <constraint firstAttribute="height" constant="50" id="5UZ-jw-af9"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.Reconocimiento" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-wA-GS8" userLabel="Imagen seleccionada">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="524"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-wA-GS8" userLabel="Imagen seleccionada">
+                                        <rect key="frame" x="0.0" y="51" width="375" height="471.5"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGq-vy-KjM">
+                                        <rect key="frame" x="0.0" y="524" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IAs-GV-FYc"/>
+                                        </constraints>
+                                        <state key="normal" title="Reconocer"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -454,31 +461,99 @@
         <!--[NAH]-->
         <scene sceneID="A70-k3-ni7">
             <objects>
-                <viewController id="VJn-RF-QgD" sceneMemberID="viewController">
+                <viewController id="VJn-RF-QgD" customClass="InicioViewController" customModule="_NAH_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5jw-wp-uAK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-Yg-fCU" userLabel="Main View Stack">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="542"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="QGq-UG-HE6">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoNah" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-a0-miP">
+                                        <rect key="frame" x="113" y="0.0" width="149.5" height="149.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Tsd-a0-miP" secondAttribute="height" id="U79-o3-HAl"/>
+                                        </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-Ul-Cc3">
-                                        <rect key="frame" x="37.5" y="258" width="300" height="150"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5Sc-5S-cNg">
+                                        <rect key="frame" x="62.5" y="165.5" width="250" height="44.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf3-5z-aVc" userLabel="Facebook">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="44.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Yf3-5z-aVc" secondAttribute="height" id="aq5-dr-F2v"/>
+                                                </constraints>
+                                                <state key="normal" image="facebook"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSu-wQ-rFV" userLabel="Twitter">
+                                                <rect key="frame" x="68.5" y="0.0" width="44.5" height="44.5"/>
+                                                <state key="normal" title="Button" image="twit"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDi-BF-9f5" userLabel="Instagram">
+                                                <rect key="frame" x="137" y="0.0" width="44.5" height="44.5"/>
+                                                <state key="normal" title="Button" image="insta"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIS-61-oBz" userLabel="Share">
+                                                <rect key="frame" x="205.5" y="0.0" width="44.5" height="44.5"/>
+                                                <state key="normal" image="share"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="9kC-oj-xuj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoT-0i-nXl">
+                                        <rect key="frame" x="37.5" y="226" width="300" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabras del dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVZ-DB-PhN" userLabel="Palabras del dia">
+                                                <rect key="frame" x="90" y="65" width="120" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="Zdj-zg-OAo"/>
-                                            <constraint firstAttribute="height" constant="150" id="faK-iU-pe2"/>
+                                            <constraint firstAttribute="height" constant="150" id="7Cv-RK-ftO"/>
+                                            <constraint firstAttribute="width" constant="300" id="ClG-39-k1i"/>
+                                            <constraint firstItem="FVZ-DB-PhN" firstAttribute="centerX" secondItem="hoT-0i-nXl" secondAttribute="centerX" id="ZP8-L1-IEw"/>
+                                            <constraint firstItem="FVZ-DB-PhN" firstAttribute="centerY" secondItem="hoT-0i-nXl" secondAttribute="centerY" id="wtu-qp-366"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02W-T9-wrE">
-                                        <rect key="frame" x="37.5" y="424" width="300" height="150"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-Ul-Cc3">
+                                        <rect key="frame" x="37.5" y="392" width="300" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rVI-Hc-lJa">
+                                                <rect key="frame" x="71.5" y="51" width="157" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te recomendamos estudiar:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-UM-ME9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="14.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxw-YF-HR8">
+                                                        <rect key="frame" x="0.0" y="14.5" width="157" height="33.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pym-ca-ojC">
+                                                        <rect key="frame" x="0.0" y="48" width="157" height="0.0"/>
+                                                        <state key="normal" title="Ir a la lección"/>
+                                                        <connections>
+                                                            <segue destination="gcL-N7-PFl" kind="show" id="GNm-Ig-BEj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="2Fa-D9-97F"/>
-                                            <constraint firstAttribute="width" constant="300" id="r86-uc-xW4"/>
+                                            <constraint firstItem="rVI-Hc-lJa" firstAttribute="centerX" secondItem="yDU-Ul-Cc3" secondAttribute="centerX" id="2OY-kX-Sr2"/>
+                                            <constraint firstItem="rVI-Hc-lJa" firstAttribute="centerY" secondItem="yDU-Ul-Cc3" secondAttribute="centerY" id="A3L-YN-Fxd"/>
+                                            <constraint firstAttribute="width" constant="300" id="Zdj-zg-OAo"/>
+                                            <constraint firstAttribute="height" constant="150" id="faK-iU-pe2"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -487,10 +562,10 @@
                         <viewLayoutGuide key="safeArea" id="Fx8-5L-4sW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fx8-5L-4sW" firstAttribute="bottom" secondItem="Nfj-Yg-fCU" secondAttribute="bottom" id="2q0-io-aJY"/>
+                            <constraint firstItem="Fx8-5L-4sW" firstAttribute="bottom" secondItem="Nfj-Yg-fCU" secondAttribute="bottom" constant="16" id="2q0-io-aJY"/>
                             <constraint firstAttribute="trailing" secondItem="Nfj-Yg-fCU" secondAttribute="trailing" id="JAu-nE-QEo"/>
                             <constraint firstItem="Nfj-Yg-fCU" firstAttribute="leading" secondItem="Fx8-5L-4sW" secondAttribute="leading" id="TJJ-bV-Iiq"/>
-                            <constraint firstItem="Nfj-Yg-fCU" firstAttribute="top" secondItem="Fx8-5L-4sW" secondAttribute="top" id="c6o-Ls-tzM"/>
+                            <constraint firstItem="Nfj-Yg-fCU" firstAttribute="top" secondItem="Fx8-5L-4sW" secondAttribute="top" constant="16" id="c6o-Ls-tzM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="[NAH]" id="vAP-la-0fd">
@@ -505,6 +580,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="recomendadaButton" destination="pym-ca-ojC" id="XRM-QY-t3M"/>
+                        <outlet property="recomendadaLabel" destination="yxw-YF-HR8" id="RDE-tA-RXu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1Z-2a-vnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,23 +782,30 @@ Jesus Yohualli Lopez</string>
             <point key="canvasLocation" x="679.20000000000005" y="228.93553223388307"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GNm-Ig-BEj"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="1.Inicio" width="394" height="855"/>
         <image name="11. Gramatica Ejercicios" width="394" height="855"/>
         <image name="12. Gramatica Leccion" width="394" height="855"/>
-        <image name="2.Reconocimiento" width="394" height="855"/>
         <image name="4.Cultura" width="394" height="720"/>
         <image name="5.CulturaDetalle" width="394" height="855"/>
         <image name="7.Codices" width="394" height="855"/>
         <image name="8. Cuentos" width="394" height="855"/>
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="facebook" width="512" height="512"/>
         <image name="gearshape.2" catalog="system" width="128" height="100"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="insta" width="512" height="512"/>
         <image name="logo-tec" width="823" height="248"/>
+        <image name="logoNah" width="180" height="180"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <image name="share" width="900" height="900"/>
+        <image name="twit" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.74900001287460327" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
