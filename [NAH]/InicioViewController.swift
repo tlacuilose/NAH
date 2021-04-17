@@ -22,8 +22,8 @@ class InicioViewController: UIViewController {
             do {
                 let data = try Data(contentsOf: url)
                 self.lecciones = try JSONDecoder().decode([Leccion].self, from: data)
-                let random = Int.random(in: 0...lecciones!.count)
-                self.leccionRecomendada = self.lecciones![2]
+                let random = Int.random(in: 0...(lecciones!.count - 1))
+                self.leccionRecomendada = self.lecciones![random]
                 self.recomendadaLabel.text = leccionRecomendada!.nombre
                 self.recomendadaButton.isHidden = false
             } catch {
