@@ -29,46 +29,10 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate {
             mapView.addAnnotation(pin.getPin())
         }
 
-        let classic = CLLocationCoordinate2DMake( 19.43460159632058, -99.13308240260533)
-        let veracruz = CLLocationCoordinate2DMake( 19.189454009510374, -96.16361537521452)
-        let puebla = CLLocationCoordinate2DMake( 19.058816658573384, -98.21906639439207)
-        let guerrero = CLLocationCoordinate2DMake( 17.71486919956484, -99.65900019823195)
-        let snluis = CLLocationCoordinate2DMake( 22.13937517941049, -100.97873737798817)
-
-        let pinclass = MKPointAnnotation()
-        let pinver = MKPointAnnotation()
-        let pinpue = MKPointAnnotation()
-        let pingue = MKPointAnnotation()
-        let pinsn = MKPointAnnotation()
-
-        pinclass.coordinate = classic
-        pinclass.title = "Nahuatl Clasico"
-
-        pinver.coordinate = veracruz
-        pinver.title = "Nahuatl de Veracruz"
-
-        pinpue.coordinate = puebla
-        pinpue.title = "Nahuatl de Puebla"
-
-        pingue.coordinate = guerrero
-        pingue.title = "Nahuatl de Guerrero"
-
-        pinsn.coordinate = snluis
-        pinsn.title = "Nahuatl de San Luis"
-
-
         let blankLocation = CLLocationCoordinate2D()
         let blankRegion = MKCoordinateRegion(center: blankLocation, latitudinalMeters: Self.MAX_REGION_METERS, longitudinalMeters: Self.MAX_REGION_METERS)
         mapView.setRegion(blankRegion, animated: false)
         mapView.showsUserLocation = true
-
-
-        mapView.addAnnotation(pinclass);
-        mapView.addAnnotation(pingue);
-        mapView.addAnnotation(pinver);
-        mapView.addAnnotation(pinpue);
-        mapView.addAnnotation(pinsn);
-        
         mapView.showsScale = true
         mapView.isZoomEnabled = true
     }
