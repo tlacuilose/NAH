@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -105,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="2551" y="221"/>
         </scene>
-        <!--Habitantes de náhuatl en tu estado-->
+        <!--Comunidades náhuatl en tu estado-->
         <scene sceneID="pQs-ks-naK">
             <objects>
                 <viewController id="Wuf-dF-z3h" customClass="MapaViewController" customModule="_NAH_" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,27 +114,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.Mapa" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-C0-k3p">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="79d-Us-VUH">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                            </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q3A-RK-fvI">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                            </mapView>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu puedes practicar nahuátl en estas comunidades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxS-b8-scZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q3A-RK-fvI">
+                                        <rect key="frame" x="0.0" y="14.5" width="375" height="559.5"/>
+                                    </mapView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jan-N9-MMu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jan-N9-MMu" firstAttribute="bottom" secondItem="Q3A-RK-fvI" secondAttribute="bottom" id="2rL-Yh-dWF"/>
-                            <constraint firstItem="f0y-C0-k3p" firstAttribute="top" secondItem="jan-N9-MMu" secondAttribute="top" id="9Si-u7-L51"/>
-                            <constraint firstItem="f0y-C0-k3p" firstAttribute="leading" secondItem="jan-N9-MMu" secondAttribute="leading" id="FWH-48-cGL"/>
-                            <constraint firstItem="jan-N9-MMu" firstAttribute="trailing" secondItem="Q3A-RK-fvI" secondAttribute="trailing" id="I3o-Jy-EQc"/>
-                            <constraint firstItem="Q3A-RK-fvI" firstAttribute="top" secondItem="jan-N9-MMu" secondAttribute="top" id="Q3q-Hn-toN"/>
-                            <constraint firstItem="jan-N9-MMu" firstAttribute="trailing" secondItem="f0y-C0-k3p" secondAttribute="trailing" id="WDV-7p-ymW"/>
-                            <constraint firstItem="Q3A-RK-fvI" firstAttribute="leading" secondItem="jan-N9-MMu" secondAttribute="leading" id="XM4-vG-IbC"/>
-                            <constraint firstItem="jan-N9-MMu" firstAttribute="bottom" secondItem="f0y-C0-k3p" secondAttribute="bottom" id="gGa-GI-jYL"/>
+                            <constraint firstItem="jan-N9-MMu" firstAttribute="bottom" secondItem="79d-Us-VUH" secondAttribute="bottom" id="GWb-Wn-eCu"/>
+                            <constraint firstItem="79d-Us-VUH" firstAttribute="trailing" secondItem="jan-N9-MMu" secondAttribute="trailing" id="Kio-tl-xH9"/>
+                            <constraint firstItem="79d-Us-VUH" firstAttribute="leading" secondItem="jan-N9-MMu" secondAttribute="leading" id="Nx2-X9-jm6"/>
+                            <constraint firstItem="79d-Us-VUH" firstAttribute="top" secondItem="jan-N9-MMu" secondAttribute="top" id="zN4-C8-XKS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Habitantes de náhuatl en tu estado" id="29u-3q-Oap"/>
+                    <navigationItem key="navigationItem" title="Comunidades náhuatl en tu estado" id="29u-3q-Oap"/>
                     <connections>
                         <outlet property="mapView" destination="Q3A-RK-fvI" id="ebs-g0-xoA"/>
                     </connections>
@@ -384,27 +389,63 @@
         <!--Frutas en náhuatl-->
         <scene sceneID="jwJ-RS-VyQ">
             <objects>
-                <viewController id="9cb-gF-YW2" sceneMemberID="viewController">
+                <viewController id="9cb-gF-YW2" customClass="ReconocimientoViewController" customModule="_NAH_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yc7-G3-7SR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.Reconocimiento" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-wA-GS8">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QHF-Ku-ec9" userLabel="Main View Stack">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                            </imageView>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HHI-xw-ejR" userLabel="Buttons Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0b-VF-ebD">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="camera.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="openCamera:" destination="9cb-gF-YW2" eventType="touchUpInside" id="zWM-ai-D6t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm3-S6-RAy" userLabel="Album Button">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                <state key="normal" title="Button">
+                                                    <imageReference key="image" image="photo.fill.on.rectangle.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="openAlbum:" destination="9cb-gF-YW2" eventType="touchUpInside" id="upQ-ef-xOQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5UZ-jw-af9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.Reconocimiento" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-wA-GS8" userLabel="Imagen seleccionada">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="524"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yWm-2S-9HM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FD8-wA-GS8" firstAttribute="leading" secondItem="yWm-2S-9HM" secondAttribute="leading" id="DzL-W3-zno"/>
-                            <constraint firstItem="FD8-wA-GS8" firstAttribute="top" secondItem="yWm-2S-9HM" secondAttribute="top" id="Jgp-xN-fHI"/>
-                            <constraint firstItem="yWm-2S-9HM" firstAttribute="bottom" secondItem="FD8-wA-GS8" secondAttribute="bottom" id="l3g-HZ-ZvF"/>
-                            <constraint firstItem="yWm-2S-9HM" firstAttribute="trailing" secondItem="FD8-wA-GS8" secondAttribute="trailing" id="n9u-6v-Ojx"/>
+                            <constraint firstItem="QHF-Ku-ec9" firstAttribute="top" secondItem="yWm-2S-9HM" secondAttribute="top" id="8aT-xF-ZNM"/>
+                            <constraint firstItem="yWm-2S-9HM" firstAttribute="bottom" secondItem="QHF-Ku-ec9" secondAttribute="bottom" id="l20-hC-tIh"/>
+                            <constraint firstItem="QHF-Ku-ec9" firstAttribute="leading" secondItem="yWm-2S-9HM" secondAttribute="leading" id="tWI-xs-uUz"/>
+                            <constraint firstAttribute="trailing" secondItem="QHF-Ku-ec9" secondAttribute="trailing" id="zPr-ld-W55"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Frutas en náhuatl" id="gc6-JV-NKx">
                         <barButtonItem key="backBarButtonItem" title="Inicio" id="uhG-RY-0uO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="p0b-VF-ebD" id="kMJ-bB-cko"/>
+                        <outlet property="imageView" destination="FD8-wA-GS8" id="cKG-Aw-4M1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrO-qL-cix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,17 +459,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="QGq-UG-HE6">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-Yg-fCU" userLabel="Main View Stack">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.Inicio" translatesAutoresizingMaskIntoConstraints="NO" id="QGq-UG-HE6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-Ul-Cc3">
+                                        <rect key="frame" x="37.5" y="258" width="300" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Zdj-zg-OAo"/>
+                                            <constraint firstAttribute="height" constant="150" id="faK-iU-pe2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02W-T9-wrE">
+                                        <rect key="frame" x="37.5" y="424" width="300" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="2Fa-D9-97F"/>
+                                            <constraint firstAttribute="width" constant="300" id="r86-uc-xW4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fx8-5L-4sW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QGq-UG-HE6" firstAttribute="trailing" secondItem="Fx8-5L-4sW" secondAttribute="trailing" id="JXR-DW-cKm"/>
-                            <constraint firstItem="QGq-UG-HE6" firstAttribute="leading" secondItem="Fx8-5L-4sW" secondAttribute="leading" id="K4o-dI-eqF"/>
-                            <constraint firstItem="QGq-UG-HE6" firstAttribute="bottom" secondItem="Fx8-5L-4sW" secondAttribute="bottom" id="VIx-vn-VB7"/>
-                            <constraint firstItem="QGq-UG-HE6" firstAttribute="top" secondItem="Fx8-5L-4sW" secondAttribute="top" id="jcd-cF-JtV"/>
+                            <constraint firstItem="Fx8-5L-4sW" firstAttribute="bottom" secondItem="Nfj-Yg-fCU" secondAttribute="bottom" id="2q0-io-aJY"/>
+                            <constraint firstAttribute="trailing" secondItem="Nfj-Yg-fCU" secondAttribute="trailing" id="JAu-nE-QEo"/>
+                            <constraint firstItem="Nfj-Yg-fCU" firstAttribute="leading" secondItem="Fx8-5L-4sW" secondAttribute="leading" id="TJJ-bV-Iiq"/>
+                            <constraint firstItem="Nfj-Yg-fCU" firstAttribute="top" secondItem="Fx8-5L-4sW" secondAttribute="top" id="c6o-Ls-tzM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="[NAH]" id="vAP-la-0fd">
@@ -648,15 +710,16 @@ Jesus Yohualli Lopez</string>
         <image name="2.Reconocimiento" width="394" height="855"/>
         <image name="4.Cultura" width="394" height="720"/>
         <image name="5.CulturaDetalle" width="394" height="855"/>
-        <image name="6.Mapa" width="394" height="855"/>
         <image name="7.Codices" width="394" height="855"/>
         <image name="8. Cuentos" width="394" height="855"/>
         <image name="book" catalog="system" width="128" height="102"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="gearshape.2" catalog="system" width="128" height="100"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo-tec" width="823" height="248"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.74900001287460327" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
