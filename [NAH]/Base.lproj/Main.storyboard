@@ -524,22 +524,25 @@
                                         <rect key="frame" x="37.5" y="392" width="300" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rVI-Hc-lJa">
-                                                <rect key="frame" x="71.5" y="51" width="157" height="48"/>
+                                                <rect key="frame" x="16" y="54.5" width="268" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te recomendamos estudiar:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-UM-ME9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="14.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="14.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxw-YF-HR8">
-                                                        <rect key="frame" x="0.0" y="14.5" width="157" height="33.5"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxw-YF-HR8">
+                                                        <rect key="frame" x="0.0" y="14.5" width="268" height="26.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="268" id="W5R-aq-RBd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pym-ca-ojC">
-                                                        <rect key="frame" x="0.0" y="48" width="157" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="41" width="268" height="0.0"/>
                                                         <state key="normal" title="Ir a la lección"/>
                                                         <connections>
                                                             <segue destination="gcL-N7-PFl" kind="show" id="GNm-Ig-BEj"/>
