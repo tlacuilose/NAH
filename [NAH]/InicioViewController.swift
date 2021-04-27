@@ -41,9 +41,11 @@ class InicioViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if let leccion = leccionRecomendada {
-            let detailView = segue.destination as! LeccionViewController
-            detailView.leccion = leccion
+        if segue.identifier == "inicioLeccion" {
+            if let leccion = leccionRecomendada {
+                let detailView = segue.destination as! LeccionViewController
+                detailView.leccion = leccion
+            }
         }
     }
     

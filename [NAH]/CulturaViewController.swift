@@ -39,7 +39,7 @@ class CulturaViewController: UIViewController {
     @IBAction func moveLeccionesLeft(_ sender: Any) {
         self.previousLeccion()
         if let nombre = lecciones?[self.leccionesIndex].nombre {
-            self.leccionesView.slideIn(.fromRight)
+            self.leccionesView.slideIn(.fromLeft)
             self.leccionesLabel.text = nombre
         } else {
             self.nextLeccion()
@@ -49,7 +49,7 @@ class CulturaViewController: UIViewController {
     @IBAction func moveLeccionesRight(_ sender: Any) {
         self.nextLeccion()
         if let nombre = lecciones?[self.leccionesIndex].nombre {
-            self.leccionesView.slideIn(.fromLeft)
+            self.leccionesView.slideIn(.fromRight)
             self.leccionesLabel.text = nombre
         } else {
             self.previousLeccion()

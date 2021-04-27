@@ -620,7 +620,7 @@
                                                         <rect key="frame" x="0.0" y="41" width="268" height="0.0"/>
                                                         <state key="normal" title="Ir a la lección"/>
                                                         <connections>
-                                                            <segue destination="gcL-N7-PFl" kind="show" id="GNm-Ig-BEj"/>
+                                                            <segue destination="gcL-N7-PFl" kind="show" identifier="inicioLeccion" id="GNm-Ig-BEj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
