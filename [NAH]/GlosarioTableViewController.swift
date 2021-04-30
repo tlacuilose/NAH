@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class GlosarioTableViewController: UITableViewController, UISearchResultsUpdating {
     
@@ -37,6 +38,17 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                 tableView.tableHeaderView = searchController.searchBar
                 
                 tableView.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
+                
+                let db = Firestore.firestore()
+                db.collection("glosarios").document("principal").setData([
+                    "palabras": self.palabras // FIXME: Encode data.
+                ]) { err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document principal successfully written!")
+                    }
+                }
             } catch {
                 print("Glosario contents could not be loaded")
             }
