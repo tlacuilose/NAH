@@ -40,6 +40,17 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                 tableView.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
                 
                 let db = Firestore.firestore()
+                var ref: DocumentReference? = nil
+                ref = db.collection("glosarios").addDocument(data: [
+                    "palabras": "nuevas palabras"
+                ]) { err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                    } else {
+                        print("Document added with ID: \(ref!.documentID)")
+                    }
+                }
+                /*
                 db.collection("glosarios").document("principal").setData([
                     "palabras": self.palabras // FIXME: Encode data.
                 ]) { err in
@@ -49,6 +60,7 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                         print("Document principal successfully written!")
                     }
                 }
+                */
             } catch {
                 print("Glosario contents could not be loaded")
             }
