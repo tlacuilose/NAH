@@ -31,7 +31,7 @@ class CulturaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let url = URL(string: self.leccionURL) {
             do {
                 let data = try Data(contentsOf: url)
@@ -48,9 +48,10 @@ class CulturaViewController: UIViewController {
         
         if let url = URL(string: self.codiceURL) {
             do {
+                let decoder = JSONDecoder()
                 let data = try Data(contentsOf: url)
-                self.codices = try JSONDecoder().decode([Codice].self, from: data)
-                self.codicesLabel.text = codices![codicesIndex].Nombre
+                self.codices = try decoder.decode([Codice].self, from: data)
+                self.codicesLabel.text = codices![codicesIndex].nombre
                 self.codicesLeft.isEnabled = false
                 self.codicesRight.isEnabled = self.codices!.indices.contains(self.codicesIndex + 1)
             } catch {
@@ -83,7 +84,7 @@ class CulturaViewController: UIViewController {
     
     @IBAction func moveCodicesLeft(_ sender: Any) {
         self.previousCodice()
-        if let nombre = codices?[self.leccionesIndex].Nombre {
+        if let nombre = codices?[self.codicesIndex].nombre {
             self.codicesView.slideIn(.fromLeft)
             self.codicesLabel.text = nombre
         } else {
@@ -93,7 +94,7 @@ class CulturaViewController: UIViewController {
     
     @IBAction func moveCodicesRight(_ sender: Any) {
         self.nextCodice()
-        if let nombre = codices?[self.leccionesIndex].Nombre {
+        if let nombre = codices?[self.codicesIndex].nombre {
             self.codicesView.slideIn(.fromRight)
             self.codicesLabel.text = nombre
         } else {
@@ -137,11 +138,18 @@ class CulturaViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-        case "culturaLeccionSegue":
+        case "culturaToLeccion":
             if let leccion = self.lecciones?[self.leccionesIndex] {
                 let detailView = segue.destination as! CulturaLeccionViewController
                 detailView.leccion = leccion
             }
+        case "culturaToCodice":
+            if let codice = self.codices?[self.codicesIndex] {
+                let detailView = segue.destination as! CodiceViewController
+                detailView.codice = codice
+            }
+        case "culturaToMapa":
+            let _ = segue.destination as! MapaViewController
         case .none:
             let detailView = segue.destination as! CulturaLeccionViewController
             detailView.leccion = nil

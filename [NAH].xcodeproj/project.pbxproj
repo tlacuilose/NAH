@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,10 @@
 		028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512C8262B6D6900DECEC6 /* PinNah.swift */; };
 		028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512D3262B7A1000DECEC6 /* InicioViewController.swift */; };
 		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
+		02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39031263CBB64002BF964 /* CodiceLista.swift */; };
+		02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39033263CC0BC002BF964 /* CodiceViewController.swift */; };
+		02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */; };
+		02F39038263CCD82002BF964 /* Ejercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39037263CCD82002BF964 /* Ejercicio.swift */; };
 		02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */; };
 		02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A94260E60FE00416E4E /* Palabra.swift */; };
 		1C1F36B395E7EFB22D9E169C /* Pods__NAH___NAH_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B9BBC7BFD439CA033C4F6D /* Pods__NAH___NAH_UITests.framework */; };
@@ -86,11 +90,15 @@
 		028512C8262B6D6900DECEC6 /* PinNah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinNah.swift; sourceTree = "<group>"; };
 		028512D3262B7A1000DECEC6 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		02F39031263CBB64002BF964 /* CodiceLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceLista.swift; sourceTree = "<group>"; };
+		02F39033263CC0BC002BF964 /* CodiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceViewController.swift; sourceTree = "<group>"; };
+		02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeccionViewController+Ejercicios.swift"; sourceTree = "<group>"; };
+		02F39037263CCD82002BF964 /* Ejercicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio.swift; sourceTree = "<group>"; };
 		02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlosarioTableViewController.swift; sourceTree = "<group>"; };
 		02FF7A94260E60FE00416E4E /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
 		2B84C3CE92879D0BDCBFC97B /* Pods-[NAH]Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]Tests.debug.xcconfig"; path = "Target Support Files/Pods-[NAH]Tests/Pods-[NAH]Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E90EF5E04BEBE1871897FF1 /* Pods-[NAH]Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]Tests.release.xcconfig"; path = "Target Support Files/Pods-[NAH]Tests/Pods-[NAH]Tests.release.xcconfig"; sourceTree = "<group>"; };
-		75B9BBC7BFD439CA033C4F6D /* Pods__NAH___NAH_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__NAH___NAH_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B9BBC7BFD439CA033C4F6D /* Pods__NAH___NAH_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__NAH___NAH_UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20C96346297AAA28A281231 /* Pods__NAH_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__NAH_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BD74E2E48B0B7E31287BA3 /* Pods-[NAH]-[NAH]UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]-[NAH]UITests.release.xcconfig"; path = "Target Support Files/Pods-[NAH]-[NAH]UITests/Pods-[NAH]-[NAH]UITests.release.xcconfig"; sourceTree = "<group>"; };
 		CA6066FAB8E9AC8D16458359 /* Pods-[NAH].release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH].release.xcconfig"; path = "Target Support Files/Pods-[NAH]/Pods-[NAH].release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 				021D43E426345AB500F41337 /* Animations.swift */,
 				021D43E926345C4100F41337 /* CulturaViewController.swift */,
 				021D43F326346EBC00F41337 /* CulturaLeccionViewController.swift */,
+				02F39033263CC0BC002BF964 /* CodiceViewController.swift */,
+				02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -211,6 +221,8 @@
 				028512C8262B6D6900DECEC6 /* PinNah.swift */,
 				021D43EE263463D700F41337 /* LeccionCultura.swift */,
 				02491E252638871500D476CC /* Codice.swift */,
+				02F39031263CBB64002BF964 /* CodiceLista.swift */,
+				02F39037263CCD82002BF964 /* Ejercicio.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,7 +247,6 @@
 				2B84C3CE92879D0BDCBFC97B /* Pods-[NAH]Tests.debug.xcconfig */,
 				4E90EF5E04BEBE1871897FF1 /* Pods-[NAH]Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -482,6 +493,7 @@
 				02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */,
 				021D43EF263463D700F41337 /* LeccionCultura.swift in Sources */,
 				0233C9022613AEBD001EA182 /* Leccion.swift in Sources */,
+				02F39038263CCD82002BF964 /* Ejercicio.swift in Sources */,
 				021D43F426346EBC00F41337 /* CulturaLeccionViewController.swift in Sources */,
 				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
 				0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */,
@@ -491,12 +503,15 @@
 				028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */,
 				02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */,
 				024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */,
+				02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */,
+				02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */,
 				02463603260126A1007D5D1D /* AppDelegate.swift in Sources */,
 				028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */,
 				02463605260126A1007D5D1D /* SceneDelegate.swift in Sources */,
 				021D43E526345AB500F41337 /* Animations.swift in Sources */,
 				02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */,
 				028512C4262B5EE200DECEC6 /* ReconocimientoViewController.swift in Sources */,
+				02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */,
 				02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
