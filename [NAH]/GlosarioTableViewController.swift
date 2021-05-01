@@ -39,6 +39,7 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                 
                 tableView.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
                 
+                /*
                 let db = Firestore.firestore()
                 var ref: DocumentReference? = nil
                 ref = db.collection("glosarios").addDocument(data: [
@@ -50,6 +51,7 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                         print("Document added with ID: \(ref!.documentID)")
                     }
                 }
+                */
                 /*
                 db.collection("glosarios").document("principal").setData([
                     "palabras": self.palabras // FIXME: Encode data.
