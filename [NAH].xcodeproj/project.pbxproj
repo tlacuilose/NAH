@@ -31,6 +31,7 @@
 		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
 		02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */; };
 		02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A94260E60FE00416E4E /* Palabra.swift */; };
+		C9AEE64626448AE70073E94D /* FruitClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C9AEE64526448AE70073E94D /* FruitClassifier1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlosarioTableViewController.swift; sourceTree = "<group>"; };
 		02FF7A94260E60FE00416E4E /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
+		C9AEE64526448AE70073E94D /* FruitClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitClassifier1.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				0246360D260126A1007D5D1D /* LaunchScreen.storyboard */,
 				02463610260126A1007D5D1D /* Info.plist */,
 				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
+				C9AEE64526448AE70073E94D /* FruitClassifier1.mlmodel */,
 				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
 				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
 				0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */,
@@ -330,6 +333,7 @@
 				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
 				0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */,
 				0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */,
+				C9AEE64626448AE70073E94D /* FruitClassifier1.mlmodel in Sources */,
 				021D43EA26345C4100F41337 /* CulturaViewController.swift in Sources */,
 				028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */,
 				02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */,

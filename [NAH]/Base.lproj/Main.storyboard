@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bCt-Ht-hfN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bCt-Ht-hfN">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -499,15 +499,24 @@
                                             <constraint firstAttribute="height" constant="50" id="5UZ-jw-af9"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-wA-GS8" userLabel="Imagen seleccionada">
-                                        <rect key="frame" x="0.0" y="51" width="375" height="471.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-wA-GS8" userLabel="Imagen seleccionada">
+                                        <rect key="frame" x="0.0" y="51" width="375" height="439"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYg-9y-q3H">
+                                        <rect key="frame" x="0.0" y="491.5" width="375" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGq-vy-KjM">
                                         <rect key="frame" x="0.0" y="524" width="375" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="IAs-GV-FYc"/>
                                         </constraints>
                                         <state key="normal" title="Reconocer"/>
+                                        <connections>
+                                            <action selector="ejecutarML" destination="9cb-gF-YW2" eventType="touchUpInside" id="Rr3-ak-3PN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -527,6 +536,7 @@
                     <connections>
                         <outlet property="cameraButton" destination="p0b-VF-ebD" id="kMJ-bB-cko"/>
                         <outlet property="imageView" destination="FD8-wA-GS8" id="cKG-Aw-4M1"/>
+                        <outlet property="predictionLabel" destination="UYg-9y-q3H" id="A41-LW-yih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrO-qL-cix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
