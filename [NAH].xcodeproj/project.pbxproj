@@ -26,6 +26,7 @@
 		0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246363A260130A7007D5D1D /* LeccionViewController.swift */; };
 		02491E262638871500D476CC /* Codice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02491E252638871500D476CC /* Codice.swift */; };
 		024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */; };
+		0277EEBC2645AB85003B187F /* FruitClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */; };
 		027C2BE4263C71D1005D26F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */; };
 		028512C4262B5EE200DECEC6 /* ReconocimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512C3262B5EE200DECEC6 /* ReconocimientoViewController.swift */; };
 		028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512C8262B6D6900DECEC6 /* PinNah.swift */; };
@@ -85,6 +86,7 @@
 		0246363A260130A7007D5D1D /* LeccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeccionViewController.swift; sourceTree = "<group>"; };
 		02491E252638871500D476CC /* Codice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codice.swift; sourceTree = "<group>"; };
 		024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabraTableViewCell.swift; sourceTree = "<group>"; };
+		0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitClassifier1.mlmodel; sourceTree = "<group>"; };
 		027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		028512C3262B5EE200DECEC6 /* ReconocimientoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconocimientoViewController.swift; sourceTree = "<group>"; };
 		028512C8262B6D6900DECEC6 /* PinNah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinNah.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				02463608260126A1007D5D1D /* Main.storyboard */,
 				0246360B260126A1007D5D1D /* Assets.xcassets */,
 				0246360D260126A1007D5D1D /* LaunchScreen.storyboard */,
+				0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */,
 				02463610260126A1007D5D1D /* Info.plist */,
 				027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */,
 				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
@@ -506,6 +509,7 @@
 				02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */,
 				02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */,
 				02463603260126A1007D5D1D /* AppDelegate.swift in Sources */,
+				0277EEBC2645AB85003B187F /* FruitClassifier1.mlmodel in Sources */,
 				028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */,
 				02463605260126A1007D5D1D /* SceneDelegate.swift in Sources */,
 				021D43E526345AB500F41337 /* Animations.swift in Sources */,
