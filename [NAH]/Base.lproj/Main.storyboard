@@ -176,45 +176,99 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bko-a1-5zE" userLabel="Stack Mapa">
                                         <rect key="frame" x="0.0" y="358.5" width="375" height="179.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mapa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJw-aw-1oX">
-                                                <rect key="frame" x="157" y="0.0" width="61" height="54.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" red="0.35294117650000001" green="0.27058823529999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16O-cs-Ucw" userLabel="Mapa View">
-                                                <rect key="frame" x="125" y="54.5" width="125" height="125"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ndL-Oz-PMh">
+                                                <rect key="frame" x="52.5" y="0.0" width="270" height="179.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-MD-kMG" userLabel="Button a mapa">
-                                                        <rect key="frame" x="32" y="32" width="61" height="61"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                        <color key="tintColor" red="0.35294117650000001" green="0.27058823529999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <state key="normal">
-                                                            <imageReference key="image" image="map" symbolScale="large"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="Wuf-dF-z3h" kind="show" identifier="culturaToMapa" id="tyO-DJ-0eF"/>
-                                                        </connections>
-                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sEO-Xl-ITt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="179.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mapa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJw-aw-1oX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="54.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <color key="textColor" red="0.35294117650000001" green="0.27058823529999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16O-cs-Ucw" userLabel="Mapa View">
+                                                                <rect key="frame" x="0.0" y="54.5" width="125" height="125"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-MD-kMG" userLabel="Button a mapa">
+                                                                        <rect key="frame" x="32" y="32" width="61" height="61"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <color key="tintColor" red="0.35294117650000001" green="0.27058823529999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <state key="normal">
+                                                                            <imageReference key="image" image="map" symbolScale="large"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <segue destination="Wuf-dF-z3h" kind="show" identifier="culturaToMapa" id="tyO-DJ-0eF"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.48859168050000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="top" secondItem="16O-cs-Ucw" secondAttribute="top" constant="32" id="IO2-3O-mXJ"/>
+                                                                    <constraint firstAttribute="width" constant="125" id="Lk5-L9-TUl"/>
+                                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="centerY" secondItem="16O-cs-Ucw" secondAttribute="centerY" id="bfk-Fh-vfv"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Cfx-MD-kMG" secondAttribute="bottom" constant="32" id="hAl-FB-bTK"/>
+                                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="centerX" secondItem="16O-cs-Ucw" secondAttribute="centerX" id="ib9-C1-kmb"/>
+                                                                    <constraint firstAttribute="height" constant="125" id="qug-jE-BUm"/>
+                                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="leading" secondItem="16O-cs-Ucw" secondAttribute="leading" constant="32" id="wy5-c6-yeJ"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Cfx-MD-kMG" secondAttribute="trailing" constant="32" id="yjG-43-MRo"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bVm-c8-CS1">
+                                                        <rect key="frame" x="145" y="0.0" width="125" height="179.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicc. UNAM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEs-bp-SCC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="54.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <color key="textColor" red="0.35294117650000001" green="0.27058823529999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hA-jv-HoP" userLabel="Dict View">
+                                                                <rect key="frame" x="0.0" y="54.5" width="125" height="125"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK0-2K-jDD" userLabel="Button a mapa">
+                                                                        <rect key="frame" x="32" y="32" width="61" height="61"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <color key="tintColor" red="0.35294117650000001" green="0.27058823529999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <state key="normal">
+                                                                            <imageReference key="image" image="dictionary" symbolScale="large"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <segue destination="Jzh-0W-U7Q" kind="show" identifier="culturaToUNAM" id="UNU-Q0-dzN"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.48859168050000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="125" id="08D-yH-Td9"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="oK0-2K-jDD" secondAttribute="trailing" constant="32" id="CqI-lx-D6I"/>
+                                                                    <constraint firstItem="oK0-2K-jDD" firstAttribute="leading" secondItem="9hA-jv-HoP" secondAttribute="leading" constant="32" id="eHd-D1-q1m"/>
+                                                                    <constraint firstItem="oK0-2K-jDD" firstAttribute="centerX" secondItem="9hA-jv-HoP" secondAttribute="centerX" id="jo3-cd-KOW"/>
+                                                                    <constraint firstItem="oK0-2K-jDD" firstAttribute="centerY" secondItem="9hA-jv-HoP" secondAttribute="centerY" id="kZP-GH-qHj"/>
+                                                                    <constraint firstItem="oK0-2K-jDD" firstAttribute="top" secondItem="9hA-jv-HoP" secondAttribute="top" constant="32" id="lVZ-4G-OvK"/>
+                                                                    <constraint firstAttribute="width" constant="125" id="omb-ex-CLV"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="oK0-2K-jDD" secondAttribute="bottom" constant="32" id="tQK-gR-wRu"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="25"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.2470588235" alpha="0.48859168050000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="top" secondItem="16O-cs-Ucw" secondAttribute="top" constant="32" id="IO2-3O-mXJ"/>
-                                                    <constraint firstAttribute="width" constant="125" id="Lk5-L9-TUl"/>
-                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="centerY" secondItem="16O-cs-Ucw" secondAttribute="centerY" id="bfk-Fh-vfv"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Cfx-MD-kMG" secondAttribute="bottom" constant="32" id="hAl-FB-bTK"/>
-                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="centerX" secondItem="16O-cs-Ucw" secondAttribute="centerX" id="ib9-C1-kmb"/>
-                                                    <constraint firstAttribute="height" constant="125" id="qug-jE-BUm"/>
-                                                    <constraint firstItem="Cfx-MD-kMG" firstAttribute="leading" secondItem="16O-cs-Ucw" secondAttribute="leading" constant="32" id="wy5-c6-yeJ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Cfx-MD-kMG" secondAttribute="trailing" constant="32" id="yjG-43-MRo"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="25"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -392,6 +446,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMx-hM-xfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4202" y="226"/>
+        </scene>
+        <!--Gran Diccionario Náhuatl-->
+        <scene sceneID="q3C-1e-POV">
+            <objects>
+                <viewController id="Jzh-0W-U7Q" customClass="DiccUNAMViewController" customModule="_NAH_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2l5-nC-yHt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ITZ-xC-DpR">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yc0-oE-McS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FNv-Uo-6ti"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ITZ-xC-DpR" firstAttribute="leading" secondItem="FNv-Uo-6ti" secondAttribute="leading" id="9so-Ad-8N1"/>
+                            <constraint firstItem="FNv-Uo-6ti" firstAttribute="trailing" secondItem="ITZ-xC-DpR" secondAttribute="trailing" id="M6b-ri-SLZ"/>
+                            <constraint firstItem="ITZ-xC-DpR" firstAttribute="top" secondItem="FNv-Uo-6ti" secondAttribute="top" id="Ogp-iw-Lfq"/>
+                            <constraint firstItem="FNv-Uo-6ti" firstAttribute="bottom" secondItem="ITZ-xC-DpR" secondAttribute="bottom" id="tsL-ZM-wZU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gran Diccionario Náhuatl" id="gST-Wd-LN6"/>
+                    <connections>
+                        <outlet property="tableView" destination="yc0-oE-McS" id="4pw-Dw-ORI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLE-lQ-K4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5044" y="225"/>
         </scene>
         <!--Leccion View Controller-->
         <scene sceneID="BdE-kN-brN">
@@ -1141,6 +1231,7 @@ Jesus Yohualli Lopez</string>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="dictionary" width="452" height="452"/>
         <image name="facebook" width="512" height="512"/>
         <image name="gearshape.2" catalog="system" width="128" height="100"/>
         <image name="house" catalog="system" width="128" height="106"/>
