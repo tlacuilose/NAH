@@ -16,6 +16,8 @@ target '[NAH]' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
 
+  pod 'SwiftSoup'
+
   target '[NAH]Tests' do
     inherit! :search_paths
     # Pods for testing
