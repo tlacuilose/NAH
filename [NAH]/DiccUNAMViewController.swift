@@ -7,27 +7,33 @@
 
 import UIKit
 
-class DiccUNAMViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DiccUNAMViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var isEsp: Bool = false
     
     var queryResponse: [[String : String]] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        DictApi.getTranslations(query: "atl") { entries in
-            print("DictApi.GetTranslations .......................................")
-            self.queryResponse = entries
-            self.tableView.reloadData()
-        }
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.register(UINib(nibName: "DiccUNAMTableViewCell", bundle: nil), forCellReuseIdentifier: "diccUNAMCell")
         
+        self.searchBar.delegate = self
+        
         
     }
+    
+    
+    @IBAction func changeLang(_ sender: UISegmentedControl) {
+        self.isEsp = sender.selectedSegmentIndex != 0 ? true : false
+        self.searchBar.placeholder = sender.selectedSegmentIndex != 0 ? "Busca en español" : "Busca en náhuatl"
+    }
+    
     
     // MARK: - Table view data source
 
@@ -45,17 +51,38 @@ class DiccUNAMViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "diccUNAMCell", for: indexPath) as! DiccUNAMTableViewCell
 
-        cell.paleo.text = self.queryResponse[indexPath.row]["Paleografía"]
+        cell.paleo.text = self.queryResponse[indexPath.row]["Paleografía"]?.lowercased()
         cell.grafiaNorm.text = self.queryResponse[indexPath.row]["Grafía normalizada"]
         cell.tipo.text = self.queryResponse[indexPath.row]["Tipo"]
-        cell.traduccionUno.text = self.queryResponse[indexPath.row]["Traducción uno"]
         cell.traduccionDos.text = self.queryResponse[indexPath.row]["Traducción dos"]
-        cell.diccionario.text = self.queryResponse[indexPath.row]["Diccionario"]
         cell.fuente.text = self.queryResponse[indexPath.row]["Fuente"]
-        cell.notas.text = self.queryResponse[indexPath.row]["Notas"]
+        
+        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor.white : UIColor.systemGroupedBackground
         
         
         return cell
+    }
+    
+    // MARK: SearchBar Delegate
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let searchText = searchBar.text, !searchText.isEmpty {
+            DictApi.getTranslations(query: searchText, get2es: self.isEsp) { entries in
+                self.queryResponse = entries
+                self.tableView.reloadData()
+                self.searchBar.resignFirstResponder()
+            }
+            // Should also include errorHandler.
+        }
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+            self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            searchBar.showsCancelButton = false
+            searchBar.text = ""
+            searchBar.resignFirstResponder()
     }
 
 }

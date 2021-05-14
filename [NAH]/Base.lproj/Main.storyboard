@@ -458,8 +458,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ITZ-xC-DpR">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yc0-oE-McS">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                    <searchBar contentMode="redraw" placeholder="Busca en náhuatl" translatesAutoresizingMaskIntoConstraints="NO" id="3m9-AD-pkC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yc0-oE-McS">
+                                        <rect key="frame" x="0.0" y="71" width="375" height="503"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                 </subviews>
@@ -474,8 +478,23 @@
                             <constraint firstItem="FNv-Uo-6ti" firstAttribute="bottom" secondItem="ITZ-xC-DpR" secondAttribute="bottom" id="tsL-ZM-wZU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Gran Diccionario Náhuatl" id="gST-Wd-LN6"/>
+                    <navigationItem key="navigationItem" title="Gran Diccionario Náhuatl" id="gST-Wd-LN6">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="1qv-ld-LHx">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="7sH-Kn-ujQ">
+                                <rect key="frame" x="264" y="5.5" width="95" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="NAH"/>
+                                    <segment title="ESP"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeLang:" destination="Jzh-0W-U7Q" eventType="valueChanged" id="jaV-Yc-hIk"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="3m9-AD-pkC" id="Fx0-dd-5ZF"/>
                         <outlet property="tableView" destination="yc0-oE-McS" id="4pw-Dw-ORI"/>
                     </connections>
                 </viewController>
@@ -1224,7 +1243,7 @@ Jesus Yohualli Lopez</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GNm-Ig-BEj"/>
+        <segue reference="Y5I-3m-yTc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="102"/>

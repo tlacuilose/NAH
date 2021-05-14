@@ -65,7 +65,7 @@ class DictApi {
     /// :return: A list of PKS
     static func getResults(query: String, get2es: Bool = false, completitionHandler: @escaping ([String]) -> ()){
     
-        let urlString = "https://gdn.iib.unam.mx/termino/search?queryCreiterio=\(query)&queryPartePalabra=cualquiera&queryBuscarEn=\(get2es ? "espanol" : "nahuatl")&queryLimiteRegistros=50"
+        let urlString = "https://gdn.iib.unam.mx/termino/search?queryCreiterio=\(query)&queryPartePalabra=inicio&queryBuscarEn=\(get2es ? "espanol" : "nahuatl")&queryLimiteRegistros=50"
         
         // Create URL
         let url = URL(string: urlString)
