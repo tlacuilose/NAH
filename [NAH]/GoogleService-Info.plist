@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>520349793958-0n7ton52n51usr2ir7ptbfgrdojjiiet.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.520349793958-0n7ton52n51usr2ir7ptbfgrdojjiiet</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQ38ci6HNnyLDbikHN8YtYCE8NtJxn-uA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>520349793958</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mx.nahuatlapp.-NAH-</string>
+	<key>PROJECT_ID</key>
+	<string>nahuatl-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nahuatl-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:520349793958:ios:6a1833992b0d2f9ccebe67</string>
+</dict>
+</plist>

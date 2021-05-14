@@ -102,5 +102,6 @@ class ReconocimientoViewController: UIViewController, UIImagePickerControllerDel
         }
         let resultado = bestPrediction+" "+String(bestConfidence)
         print(resultado)
-        predictionLabel.text = translations[bestPrediction]
+        print(translations[bestPrediction] ?? "No es fruta.")
+        predictionLabel.text = translations[bestPrediction] ?? "No es fruta."
     }}

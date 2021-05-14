@@ -8,7 +8,6 @@
 import UIKit
 
 class LeccionViewController: UIViewController {
-    @IBOutlet weak var leccionAttributed: UILabel!
     @IBOutlet weak var leccionText: UITextView!
     
     @IBOutlet weak var vocabularioView: UIView!
@@ -18,10 +17,22 @@ class LeccionViewController: UIViewController {
     
     @IBOutlet weak var ejerciciosView: UIView!
     
+    @IBOutlet weak var ejStackView: UIStackView!
+    
+    @IBOutlet weak var ejTipoLabel: UILabel!
+    @IBOutlet weak var ejPreguntaLabel: UILabel!
+    @IBOutlet weak var ejRespuestaLabel: UILabel!
+    @IBOutlet weak var ejerciciosLeft: UIButton!
+    @IBOutlet weak var ejerciciosRight: UIButton!
+    @IBOutlet weak var ejercicioButton: UIButton!
     
     let jsonURL = "http://martinmolina.com.mx/202111/equipo5/data/vocaleccion.json"
     var vocabulario: [Palabra]?
     var leccion: Leccion?
+    
+    let ejJsonURL = "http://martinmolina.com.mx/202111/equipo5/data/preguntasrespuestas.json"
+    var ejercicios: [Ejercicio]?
+    var ejerciciosIndex: Int = 0
     
     
     override func viewDidLoad() {
@@ -62,6 +73,8 @@ class LeccionViewController: UIViewController {
         self.vocabularioTable.delegate = self
         self.vocabularioTable.dataSource = self
         
+        loadEjercicios()
+        
     }
     
     @IBAction func changeView(_ sender: UISegmentedControl) {
@@ -71,4 +84,31 @@ class LeccionViewController: UIViewController {
         self.ejerciciosView.isHidden = (selection != 2)
     }
     
+    // MARK: Ejercicios
+    @IBAction func moveEjerciciosLeft(_ sender: Any) {
+        self.previousEjercicio()
+        if let ejercicio = ejercicios?[self.ejerciciosIndex] {
+            self.ejRespuestaLabel.isHidden = true
+            self.ejStackView.slideIn(.fromLeft)
+            displayEjercicio(ejercicio)
+        } else {
+            self.nextEjercicio()
+        }
+
+    }
+    
+    @IBAction func moveEjerciciosRight(_ sender: Any) {
+        self.nextEjercicio()
+        if let ejercicio = ejercicios?[self.ejerciciosIndex] {
+            self.ejRespuestaLabel.isHidden = true
+            self.ejStackView.slideIn(.fromRight)
+            displayEjercicio(ejercicio)
+        } else {
+            self.previousEjercicio()
+        }
+    }
+    
+    @IBAction func showResponse(_ sender: Any) {
+        self.ejRespuestaLabel.isHidden = false
+    }
 }

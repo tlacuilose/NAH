@@ -29,9 +29,6 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate {
             mapView.addAnnotation(pin.getPin())
         }
 
-        let blankLocation = CLLocationCoordinate2D()
-        let blankRegion = MKCoordinateRegion(center: blankLocation, latitudinalMeters: Self.MAX_REGION_METERS, longitudinalMeters: Self.MAX_REGION_METERS)
-        mapView.setRegion(blankRegion, animated: false)
         mapView.showsUserLocation = true
         mapView.showsScale = true
         mapView.isZoomEnabled = true

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,14 +24,23 @@
 		02463625260126A2007D5D1D /* _NAH_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463624260126A2007D5D1D /* _NAH_UITests.swift */; };
 		02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463635260129C7007D5D1D /* GramaticaTableViewController.swift */; };
 		0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246363A260130A7007D5D1D /* LeccionViewController.swift */; };
+		02491E262638871500D476CC /* Codice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02491E252638871500D476CC /* Codice.swift */; };
 		024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */; };
+		0277EEBC2645AB85003B187F /* FruitClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */; };
+		027C2BE4263C71D1005D26F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */; };
 		028512C4262B5EE200DECEC6 /* ReconocimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512C3262B5EE200DECEC6 /* ReconocimientoViewController.swift */; };
 		028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512C8262B6D6900DECEC6 /* PinNah.swift */; };
 		028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512D3262B7A1000DECEC6 /* InicioViewController.swift */; };
 		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
+		02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39031263CBB64002BF964 /* CodiceLista.swift */; };
+		02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39033263CC0BC002BF964 /* CodiceViewController.swift */; };
+		02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */; };
+		02F39038263CCD82002BF964 /* Ejercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39037263CCD82002BF964 /* Ejercicio.swift */; };
 		02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */; };
 		02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF7A94260E60FE00416E4E /* Palabra.swift */; };
-		C9AEE64626448AE70073E94D /* FruitClassifier1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C9AEE64526448AE70073E94D /* FruitClassifier1.mlmodel */; };
+		1C1F36B395E7EFB22D9E169C /* Pods__NAH___NAH_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B9BBC7BFD439CA033C4F6D /* Pods__NAH___NAH_UITests.framework */; };
+		B0EFEB037C29B5788E1E047C /* Pods__NAH_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD694A5E0E0724EFF6CB4384 /* Pods__NAH_.framework */; };
+		C3AE84F871A1D19ECA65D957 /* Pods__NAH_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20C96346297AAA28A281231 /* Pods__NAH_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,14 +84,29 @@
 		02463626260126A2007D5D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02463635260129C7007D5D1D /* GramaticaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GramaticaTableViewController.swift; sourceTree = "<group>"; };
 		0246363A260130A7007D5D1D /* LeccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeccionViewController.swift; sourceTree = "<group>"; };
+		02491E252638871500D476CC /* Codice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codice.swift; sourceTree = "<group>"; };
 		024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabraTableViewCell.swift; sourceTree = "<group>"; };
+		0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitClassifier1.mlmodel; sourceTree = "<group>"; };
+		027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		028512C3262B5EE200DECEC6 /* ReconocimientoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconocimientoViewController.swift; sourceTree = "<group>"; };
 		028512C8262B6D6900DECEC6 /* PinNah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinNah.swift; sourceTree = "<group>"; };
 		028512D3262B7A1000DECEC6 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		02F39031263CBB64002BF964 /* CodiceLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceLista.swift; sourceTree = "<group>"; };
+		02F39033263CC0BC002BF964 /* CodiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceViewController.swift; sourceTree = "<group>"; };
+		02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeccionViewController+Ejercicios.swift"; sourceTree = "<group>"; };
+		02F39037263CCD82002BF964 /* Ejercicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio.swift; sourceTree = "<group>"; };
 		02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlosarioTableViewController.swift; sourceTree = "<group>"; };
 		02FF7A94260E60FE00416E4E /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
-		C9AEE64526448AE70073E94D /* FruitClassifier1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitClassifier1.mlmodel; sourceTree = "<group>"; };
+		2B84C3CE92879D0BDCBFC97B /* Pods-[NAH]Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]Tests.debug.xcconfig"; path = "Target Support Files/Pods-[NAH]Tests/Pods-[NAH]Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E90EF5E04BEBE1871897FF1 /* Pods-[NAH]Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]Tests.release.xcconfig"; path = "Target Support Files/Pods-[NAH]Tests/Pods-[NAH]Tests.release.xcconfig"; sourceTree = "<group>"; };
+		75B9BBC7BFD439CA033C4F6D /* Pods__NAH___NAH_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods__NAH___NAH_UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20C96346297AAA28A281231 /* Pods__NAH_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__NAH_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BD74E2E48B0B7E31287BA3 /* Pods-[NAH]-[NAH]UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]-[NAH]UITests.release.xcconfig"; path = "Target Support Files/Pods-[NAH]-[NAH]UITests/Pods-[NAH]-[NAH]UITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA6066FAB8E9AC8D16458359 /* Pods-[NAH].release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH].release.xcconfig"; path = "Target Support Files/Pods-[NAH]/Pods-[NAH].release.xcconfig"; sourceTree = "<group>"; };
+		E7EE5BC14703E042B1A2A68C /* Pods-[NAH]-[NAH]UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH]-[NAH]UITests.debug.xcconfig"; path = "Target Support Files/Pods-[NAH]-[NAH]UITests/Pods-[NAH]-[NAH]UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE8677410399EEA778994DB9 /* Pods-[NAH].debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-[NAH].debug.xcconfig"; path = "Target Support Files/Pods-[NAH]/Pods-[NAH].debug.xcconfig"; sourceTree = "<group>"; };
+		FD694A5E0E0724EFF6CB4384 /* Pods__NAH_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__NAH_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EFEB037C29B5788E1E047C /* Pods__NAH_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AE84F871A1D19ECA65D957 /* Pods__NAH_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1F36B395E7EFB22D9E169C /* Pods__NAH___NAH_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +144,8 @@
 				02463618260126A2007D5D1D /* [NAH]Tests */,
 				02463623260126A2007D5D1D /* [NAH]UITests */,
 				02463600260126A1007D5D1D /* Products */,
+				CE31AD87E3C76919F0F4B45C /* Pods */,
+				10097CE7AE4B9E346789D821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +170,10 @@
 				02463608260126A1007D5D1D /* Main.storyboard */,
 				0246360B260126A1007D5D1D /* Assets.xcassets */,
 				0246360D260126A1007D5D1D /* LaunchScreen.storyboard */,
+				0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */,
 				02463610260126A1007D5D1D /* Info.plist */,
+				027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */,
 				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
-				C9AEE64526448AE70073E94D /* FruitClassifier1.mlmodel */,
 				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
 				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
 				0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */,
@@ -153,6 +183,8 @@
 				021D43E426345AB500F41337 /* Animations.swift */,
 				021D43E926345C4100F41337 /* CulturaViewController.swift */,
 				021D43F326346EBC00F41337 /* CulturaLeccionViewController.swift */,
+				02F39033263CC0BC002BF964 /* CodiceViewController.swift */,
+				02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -191,8 +223,34 @@
 				0233C9012613AEBD001EA182 /* Leccion.swift */,
 				028512C8262B6D6900DECEC6 /* PinNah.swift */,
 				021D43EE263463D700F41337 /* LeccionCultura.swift */,
+				02491E252638871500D476CC /* Codice.swift */,
+				02F39031263CBB64002BF964 /* CodiceLista.swift */,
+				02F39037263CCD82002BF964 /* Ejercicio.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10097CE7AE4B9E346789D821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD694A5E0E0724EFF6CB4384 /* Pods__NAH_.framework */,
+				75B9BBC7BFD439CA033C4F6D /* Pods__NAH___NAH_UITests.framework */,
+				A20C96346297AAA28A281231 /* Pods__NAH_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE31AD87E3C76919F0F4B45C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE8677410399EEA778994DB9 /* Pods-[NAH].debug.xcconfig */,
+				CA6066FAB8E9AC8D16458359 /* Pods-[NAH].release.xcconfig */,
+				E7EE5BC14703E042B1A2A68C /* Pods-[NAH]-[NAH]UITests.debug.xcconfig */,
+				C2BD74E2E48B0B7E31287BA3 /* Pods-[NAH]-[NAH]UITests.release.xcconfig */,
+				2B84C3CE92879D0BDCBFC97B /* Pods-[NAH]Tests.debug.xcconfig */,
+				4E90EF5E04BEBE1871897FF1 /* Pods-[NAH]Tests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02463629260126A2007D5D1D /* Build configuration list for PBXNativeTarget "[NAH]" */;
 			buildPhases = (
+				D0DBCB452F2833311586324E /* [CP] Check Pods Manifest.lock */,
 				024635FB260126A1007D5D1D /* Sources */,
 				024635FC260126A1007D5D1D /* Frameworks */,
 				024635FD260126A1007D5D1D /* Resources */,
+				D2DD7081611C0776494564C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0246362C260126A2007D5D1D /* Build configuration list for PBXNativeTarget "[NAH]Tests" */;
 			buildPhases = (
+				396014A4AD43BE58BCF5B3B8 /* [CP] Check Pods Manifest.lock */,
 				02463611260126A2007D5D1D /* Sources */,
 				02463612260126A2007D5D1D /* Frameworks */,
 				02463613260126A2007D5D1D /* Resources */,
@@ -237,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0246362F260126A2007D5D1D /* Build configuration list for PBXNativeTarget "[NAH]UITests" */;
 			buildPhases = (
+				7955943E5BB3B206F0A041CE /* [CP] Check Pods Manifest.lock */,
 				0246361C260126A2007D5D1D /* Sources */,
 				0246361D260126A2007D5D1D /* Frameworks */,
 				0246361E260126A2007D5D1D /* Resources */,
+				8581134D5DAE6E6CF11B7658 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +363,7 @@
 			files = (
 				0246360F260126A1007D5D1D /* LaunchScreen.storyboard in Resources */,
 				0246360C260126A1007D5D1D /* Assets.xcassets in Resources */,
+				027C2BE4263C71D1005D26F5 /* GoogleService-Info.plist in Resources */,
 				0246360A260126A1007D5D1D /* Main.storyboard in Resources */,
 				0233C9172613BE29001EA182 /* PalabraTableViewCell.xib in Resources */,
 			);
@@ -321,6 +385,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		396014A4AD43BE58BCF5B3B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-[NAH]Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7955943E5BB3B206F0A041CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-[NAH]-[NAH]UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8581134D5DAE6E6CF11B7658 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-[NAH]-[NAH]UITests/Pods-[NAH]-[NAH]UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-[NAH]-[NAH]UITests/Pods-[NAH]-[NAH]UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-[NAH]-[NAH]UITests/Pods-[NAH]-[NAH]UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0DBCB452F2833311586324E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-[NAH]-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2DD7081611C0776494564C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-[NAH]/Pods-[NAH]-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-[NAH]/Pods-[NAH]-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-[NAH]/Pods-[NAH]-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		024635FB260126A1007D5D1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,21 +496,26 @@
 				02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */,
 				021D43EF263463D700F41337 /* LeccionCultura.swift in Sources */,
 				0233C9022613AEBD001EA182 /* Leccion.swift in Sources */,
+				02F39038263CCD82002BF964 /* Ejercicio.swift in Sources */,
 				021D43F426346EBC00F41337 /* CulturaLeccionViewController.swift in Sources */,
 				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
 				0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */,
+				02491E262638871500D476CC /* Codice.swift in Sources */,
 				0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */,
-				C9AEE64626448AE70073E94D /* FruitClassifier1.mlmodel in Sources */,
 				021D43EA26345C4100F41337 /* CulturaViewController.swift in Sources */,
 				028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */,
 				02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */,
 				024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */,
+				02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */,
+				02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */,
 				02463603260126A1007D5D1D /* AppDelegate.swift in Sources */,
+				0277EEBC2645AB85003B187F /* FruitClassifier1.mlmodel in Sources */,
 				028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */,
 				02463605260126A1007D5D1D /* SceneDelegate.swift in Sources */,
 				021D43E526345AB500F41337 /* Animations.swift in Sources */,
 				02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */,
 				028512C4262B5EE200DECEC6 /* ReconocimientoViewController.swift in Sources */,
+				02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */,
 				02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +689,7 @@
 		};
 		0246362A260126A2007D5D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8677410399EEA778994DB9 /* Pods-[NAH].debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,7 +700,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.-NAH-";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.nahuatlapp.-NAH-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -536,6 +709,7 @@
 		};
 		0246362B260126A2007D5D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6066FAB8E9AC8D16458359 /* Pods-[NAH].release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -546,7 +720,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.-NAH-";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.nahuatlapp.-NAH-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -555,6 +729,7 @@
 		};
 		0246362D260126A2007D5D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B84C3CE92879D0BDCBFC97B /* Pods-[NAH]Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -577,6 +752,7 @@
 		};
 		0246362E260126A2007D5D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E90EF5E04BEBE1871897FF1 /* Pods-[NAH]Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -599,6 +775,7 @@
 		};
 		02463630260126A2007D5D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EE5BC14703E042B1A2A68C /* Pods-[NAH]-[NAH]UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,6 +796,7 @@
 		};
 		02463631260126A2007D5D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BD74E2E48B0B7E31287BA3 /* Pods-[NAH]-[NAH]UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
