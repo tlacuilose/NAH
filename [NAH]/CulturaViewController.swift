@@ -150,6 +150,8 @@ class CulturaViewController: UIViewController {
             }
         case "culturaToMapa":
             let _ = segue.destination as! MapaViewController
+        case "culturaToUNAM":
+            let _ = segue.destination as! DiccUNAMViewController
         case .none:
             let detailView = segue.destination as! CulturaLeccionViewController
             detailView.leccion = nil
