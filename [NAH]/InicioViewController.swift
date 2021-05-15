@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class InicioViewController: UIViewController {
     @IBOutlet weak var recomendadaLabel: UILabel!
@@ -101,4 +102,14 @@ class InicioViewController: UIViewController {
         let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
         present(ac, animated: true)
     }
+    
+    @IBAction func salir(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "inicioToAuth", sender: self)
+        } catch {
+            print("Sign out error")
+        }
+    }
+    
 }

@@ -35,6 +35,7 @@
 		028512C9262B6D6900DECEC6 /* PinNah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512C8262B6D6900DECEC6 /* PinNah.swift */; };
 		028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028512D3262B7A1000DECEC6 /* InicioViewController.swift */; };
 		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
+		02C24C9426501E4B00606923 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C24C9326501E4B00606923 /* AuthViewController.swift */; };
 		02EFBDD5264DA846006CFC05 /* DictApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFBDD4264DA846006CFC05 /* DictApi.swift */; };
 		02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39031263CBB64002BF964 /* CodiceLista.swift */; };
 		02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39033263CC0BC002BF964 /* CodiceViewController.swift */; };
@@ -99,6 +100,7 @@
 		028512C8262B6D6900DECEC6 /* PinNah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinNah.swift; sourceTree = "<group>"; };
 		028512D3262B7A1000DECEC6 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		02C24C9326501E4B00606923 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		02EFBDD4264DA846006CFC05 /* DictApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictApi.swift; sourceTree = "<group>"; };
 		02F39031263CBB64002BF964 /* CodiceLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceLista.swift; sourceTree = "<group>"; };
 		02F39033263CC0BC002BF964 /* CodiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */,
 				0208A7AB264AF52000A61355 /* DiccUNAMViewController.swift */,
 				02EFBDD4264DA846006CFC05 /* DictApi.swift */,
+				02C24C9326501E4B00606923 /* AuthViewController.swift */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				021D43E526345AB500F41337 /* Animations.swift in Sources */,
 				0208A7AF264AF71F00A61355 /* DiccUNAMTableViewCell.swift in Sources */,
 				02FF7A8F260E580A00416E4E /* GlosarioTableViewController.swift in Sources */,
+				02C24C9426501E4B00606923 /* AuthViewController.swift in Sources */,
 				028512C4262B5EE200DECEC6 /* ReconocimientoViewController.swift in Sources */,
 				02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */,
 				02FF7A95260E60FE00416E4E /* Palabra.swift in Sources */,
