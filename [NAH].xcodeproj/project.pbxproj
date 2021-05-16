@@ -19,7 +19,6 @@
 		0233C9172613BE29001EA182 /* PalabraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0233C9162613BE29001EA182 /* PalabraTableViewCell.xib */; };
 		02463603260126A1007D5D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463602260126A1007D5D1D /* AppDelegate.swift */; };
 		02463605260126A1007D5D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463604260126A1007D5D1D /* SceneDelegate.swift */; };
-		02463607260126A1007D5D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02463606260126A1007D5D1D /* ViewController.swift */; };
 		0246360A260126A1007D5D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02463608260126A1007D5D1D /* Main.storyboard */; };
 		0246360C260126A1007D5D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0246360B260126A1007D5D1D /* Assets.xcassets */; };
 		0246360F260126A1007D5D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0246360D260126A1007D5D1D /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 		02B8F20D261CCED2006E847A /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B8F20C261CCED2006E847A /* MapaViewController.swift */; };
 		02C24C9426501E4B00606923 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C24C9326501E4B00606923 /* AuthViewController.swift */; };
 		02EFBDD5264DA846006CFC05 /* DictApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFBDD4264DA846006CFC05 /* DictApi.swift */; };
-		02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39031263CBB64002BF964 /* CodiceLista.swift */; };
 		02F39034263CC0BC002BF964 /* CodiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39033263CC0BC002BF964 /* CodiceViewController.swift */; };
 		02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */; };
 		02F39038263CCD82002BF964 /* Ejercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F39037263CCD82002BF964 /* Ejercicio.swift */; };
@@ -79,7 +77,6 @@
 		024635FF260126A1007D5D1D /* [NAH].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[NAH].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02463602260126A1007D5D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02463604260126A1007D5D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02463606260126A1007D5D1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02463609260126A1007D5D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0246360B260126A1007D5D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0246360E260126A1007D5D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +99,6 @@
 		02B8F20C261CCED2006E847A /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		02C24C9326501E4B00606923 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		02EFBDD4264DA846006CFC05 /* DictApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictApi.swift; sourceTree = "<group>"; };
-		02F39031263CBB64002BF964 /* CodiceLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceLista.swift; sourceTree = "<group>"; };
 		02F39033263CC0BC002BF964 /* CodiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodiceViewController.swift; sourceTree = "<group>"; };
 		02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeccionViewController+Ejercicios.swift"; sourceTree = "<group>"; };
 		02F39037263CCD82002BF964 /* Ejercicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio.swift; sourceTree = "<group>"; };
@@ -147,6 +143,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020D7D57265190B80038339E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02463602260126A1007D5D1D /* AppDelegate.swift */,
+				02463604260126A1007D5D1D /* SceneDelegate.swift */,
+				021D43E426345AB500F41337 /* Animations.swift */,
+				0246360B260126A1007D5D1D /* Assets.xcassets */,
+				02463608260126A1007D5D1D /* Main.storyboard */,
+				0246360D260126A1007D5D1D /* LaunchScreen.storyboard */,
+				02463610260126A1007D5D1D /* Info.plist */,
+				027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		020D7D58265192480038339E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				02C24C9326501E4B00606923 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		020D7D59265194040038339E /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				028512D3262B7A1000DECEC6 /* InicioViewController.swift */,
+				028512C3262B5EE200DECEC6 /* ReconocimientoViewController.swift */,
+				0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */,
+			);
+			path = Inicio;
+			sourceTree = "<group>";
+		};
+		020D7D5A265199CF0038339E /* Cultura */ = {
+			isa = PBXGroup;
+			children = (
+				021D43E926345C4100F41337 /* CulturaViewController.swift */,
+				021D43F326346EBC00F41337 /* CulturaLeccionViewController.swift */,
+				02F39033263CC0BC002BF964 /* CodiceViewController.swift */,
+				02B8F20C261CCED2006E847A /* MapaViewController.swift */,
+				0208A7AB264AF52000A61355 /* DiccUNAMViewController.swift */,
+				02EFBDD4264DA846006CFC05 /* DictApi.swift */,
+				020D7D5B26519A840038339E /* Models */,
+				020D7D5D26519E920038339E /* Views */,
+			);
+			path = Cultura;
+			sourceTree = "<group>";
+		};
+		020D7D5B26519A840038339E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				021D43EE263463D700F41337 /* LeccionCultura.swift */,
+				02491E252638871500D476CC /* Codice.swift */,
+				028512C8262B6D6900DECEC6 /* PinNah.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		020D7D5C26519E6F0038339E /* Gramatica */ = {
+			isa = PBXGroup;
+			children = (
+				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
+				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
+				0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */,
+				02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */,
+				020D7D5E26519ECD0038339E /* Models */,
+			);
+			path = Gramatica;
+			sourceTree = "<group>";
+		};
+		020D7D5D26519E920038339E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0208A7AD264AF71F00A61355 /* DiccUNAMTableViewCell.swift */,
+				0208A7AE264AF71F00A61355 /* DiccUNAMTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		020D7D5E26519ECD0038339E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0233C9012613AEBD001EA182 /* Leccion.swift */,
+				02F39037263CCD82002BF964 /* Ejercicio.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		020D7D5F26519F1A0038339E /* Glosario */ = {
+			isa = PBXGroup;
+			children = (
+				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
+				024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */,
+				0233C9162613BE29001EA182 /* PalabraTableViewCell.xib */,
+				02FF7A94260E60FE00416E4E /* Palabra.swift */,
+			);
+			path = Glosario;
+			sourceTree = "<group>";
+		};
 		024635F6260126A1007D5D1D = {
 			isa = PBXGroup;
 			children = (
@@ -172,32 +267,12 @@
 		02463601260126A1007D5D1D /* [NAH] */ = {
 			isa = PBXGroup;
 			children = (
-				024CFEBC261029FE00A4B8A8 /* Cells */,
-				02FF7A93260E60EF00416E4E /* Models */,
-				02463602260126A1007D5D1D /* AppDelegate.swift */,
-				02463604260126A1007D5D1D /* SceneDelegate.swift */,
-				02463606260126A1007D5D1D /* ViewController.swift */,
-				02463608260126A1007D5D1D /* Main.storyboard */,
-				0246360B260126A1007D5D1D /* Assets.xcassets */,
-				0246360D260126A1007D5D1D /* LaunchScreen.storyboard */,
-				0277EEBB2645AB85003B187F /* FruitClassifier1.mlmodel */,
-				02463610260126A1007D5D1D /* Info.plist */,
-				027C2BE3263C71D1005D26F5 /* GoogleService-Info.plist */,
-				02463635260129C7007D5D1D /* GramaticaTableViewController.swift */,
-				0246363A260130A7007D5D1D /* LeccionViewController.swift */,
-				02FF7A8E260E580A00416E4E /* GlosarioTableViewController.swift */,
-				0233C9112613BCD5001EA182 /* LeccionViewController+Vocabulario.swift */,
-				02B8F20C261CCED2006E847A /* MapaViewController.swift */,
-				028512C3262B5EE200DECEC6 /* ReconocimientoViewController.swift */,
-				028512D3262B7A1000DECEC6 /* InicioViewController.swift */,
-				021D43E426345AB500F41337 /* Animations.swift */,
-				021D43E926345C4100F41337 /* CulturaViewController.swift */,
-				021D43F326346EBC00F41337 /* CulturaLeccionViewController.swift */,
-				02F39033263CC0BC002BF964 /* CodiceViewController.swift */,
-				02F39035263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift */,
-				0208A7AB264AF52000A61355 /* DiccUNAMViewController.swift */,
-				02EFBDD4264DA846006CFC05 /* DictApi.swift */,
-				02C24C9326501E4B00606923 /* AuthViewController.swift */,
+				020D7D57265190B80038339E /* App */,
+				020D7D58265192480038339E /* Auth */,
+				020D7D59265194040038339E /* Inicio */,
+				020D7D5A265199CF0038339E /* Cultura */,
+				020D7D5C26519E6F0038339E /* Gramatica */,
+				020D7D5F26519F1A0038339E /* Glosario */,
 			);
 			path = "[NAH]";
 			sourceTree = "<group>";
@@ -218,31 +293,6 @@
 				02463626260126A2007D5D1D /* Info.plist */,
 			);
 			path = "[NAH]UITests";
-			sourceTree = "<group>";
-		};
-		024CFEBC261029FE00A4B8A8 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				024CFEBD26102A2C00A4B8A8 /* PalabraTableViewCell.swift */,
-				0233C9162613BE29001EA182 /* PalabraTableViewCell.xib */,
-				0208A7AD264AF71F00A61355 /* DiccUNAMTableViewCell.swift */,
-				0208A7AE264AF71F00A61355 /* DiccUNAMTableViewCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		02FF7A93260E60EF00416E4E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				02FF7A94260E60FE00416E4E /* Palabra.swift */,
-				0233C9012613AEBD001EA182 /* Leccion.swift */,
-				028512C8262B6D6900DECEC6 /* PinNah.swift */,
-				021D43EE263463D700F41337 /* LeccionCultura.swift */,
-				02491E252638871500D476CC /* Codice.swift */,
-				02F39031263CBB64002BF964 /* CodiceLista.swift */,
-				02F39037263CCD82002BF964 /* Ejercicio.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		10097CE7AE4B9E346789D821 /* Frameworks */ = {
@@ -514,7 +564,6 @@
 				0233C9022613AEBD001EA182 /* Leccion.swift in Sources */,
 				02F39038263CCD82002BF964 /* Ejercicio.swift in Sources */,
 				021D43F426346EBC00F41337 /* CulturaLeccionViewController.swift in Sources */,
-				02463607260126A1007D5D1D /* ViewController.swift in Sources */,
 				0233C9122613BCD5001EA182 /* LeccionViewController+Vocabulario.swift in Sources */,
 				02491E262638871500D476CC /* Codice.swift in Sources */,
 				0246363B260130A7007D5D1D /* LeccionViewController.swift in Sources */,
@@ -524,7 +573,6 @@
 				02463636260129C7007D5D1D /* GramaticaTableViewController.swift in Sources */,
 				024CFEBF26102A2C00A4B8A8 /* PalabraTableViewCell.swift in Sources */,
 				02F39036263CCC1A002BF964 /* LeccionViewController+Ejercicios.swift in Sources */,
-				02F39032263CBB64002BF964 /* CodiceLista.swift in Sources */,
 				02463603260126A1007D5D1D /* AppDelegate.swift in Sources */,
 				0277EEBC2645AB85003B187F /* FruitClassifier1.mlmodel in Sources */,
 				028512D4262B7A1000DECEC6 /* InicioViewController.swift in Sources */,
@@ -715,7 +763,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JM9F46XG3;
-				INFOPLIST_FILE = "[NAH]/Info.plist";
+				INFOPLIST_FILE = "[NAH]/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -735,7 +783,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JM9F46XG3;
-				INFOPLIST_FILE = "[NAH]/Info.plist";
+				INFOPLIST_FILE = "[NAH]/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

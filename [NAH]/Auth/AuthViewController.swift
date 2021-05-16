@@ -32,7 +32,7 @@ class AuthViewController: UIViewController {
             let email = emailField.text!
             let pass = passField.text!
             Auth.auth().createUser(withEmail: email, password: pass) { authResult, error in
-                if let err = error as? NSError {
+                if let err = error as NSError? {
                     switch AuthErrorCode(rawValue: err.code) {
                         case .operationNotAllowed:
                             self.errorCrearLabel.text = "Error en la operación"
@@ -53,9 +53,8 @@ class AuthViewController: UIViewController {
                     self.errorCrearLabel.isHidden = false
                 } else {
                     print("User signs up successfully")
-                    let newUserInfo = Auth.auth().currentUser
-                    let email = newUserInfo?.email
-                    print(email)
+//                    let newUserInfo = Auth.auth().currentUser
+//                    let email = newUserInfo?.email
                     self.performSegue(withIdentifier: "authToInicio", sender: self)
                     
                 }
@@ -68,7 +67,7 @@ class AuthViewController: UIViewController {
             let email = loginEmailField.text!
             let pass = loginPassField.text!
             Auth.auth().signIn(withEmail: email, password: pass) { (authResult, error) in
-              if let error = error as? NSError {
+                if let error = error as NSError? {
                 switch AuthErrorCode(rawValue: error.code) {
                 case .operationNotAllowed:
                   // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
@@ -99,8 +98,8 @@ class AuthViewController: UIViewController {
                 }
               } else {
                 print("User signs in successfully")
-                let userInfo = Auth.auth().currentUser
-                let email = userInfo?.email
+//                let userInfo = Auth.auth().currentUser
+//                let email = userInfo?.email
                 self.performSegue(withIdentifier: "authToInicio", sender: self)
               }
             }
@@ -141,7 +140,12 @@ class AuthViewController: UIViewController {
             self.errorLoginLabel.isHidden = false
         }
         
-        return isValidEmail(email)
+        if !isValidPassword(pass) {
+            self.errorLoginLabel.text = "Completa la contraseña."
+            self.errorLoginLabel.isHidden = false
+        }
+        
+        return isValidEmail(email) && isValidPassword(pass)
     }
     
     func isValidEmail(_ email: String) -> Bool {
