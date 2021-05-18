@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LeccionViewController: UIViewController {
     @IBOutlet weak var leccionText: UITextView!
@@ -75,6 +77,13 @@ class LeccionViewController: UIViewController {
         
         loadEjercicios()
         
+        if let userId = Auth.auth().currentUser?.uid, let curr_leccion = leccion?.id {
+            let db = Firestore.firestore()
+            
+            db.collection("perfiles").document(userId).setData([
+                "ultima_leccion": curr_leccion
+            ])
+        }
     }
     
     @IBAction func changeView(_ sender: UISegmentedControl) {
