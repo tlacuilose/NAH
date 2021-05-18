@@ -1386,7 +1386,7 @@ y cuestiones de cultura de nuestros pueblos originarios, que permitan al estudia
         <image name="share" width="900" height="900"/>
         <image name="twit" width="512" height="512"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.74900001287460327" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.74901960784313726" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
