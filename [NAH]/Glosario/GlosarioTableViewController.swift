@@ -21,6 +21,44 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let db = Firestore.firestore()
+        
+        let docRef = db.collection("glosarios").document("FPiPApIPo4ZaTuCGxhkO")
+        
+
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                print("Document data: \(dataDescription)")
+                if let palabrasData = document.data()?["palabras"] {
+                    do {
+                        let data = try JSONSerialization.data(withJSONObject:palabrasData)
+                        print(data)
+                        self.palabras = try JSONDecoder().decode([Palabra].self, from: data)
+                        (self.sections , self.separatedPalabras) = self.findSections(in: self.palabras!)
+                        
+                        // Search flow
+                        self.filteredData = self.palabras
+            
+                        
+                        self.searchController.searchResultsUpdater = self
+                        self.searchController.obscuresBackgroundDuringPresentation = false
+                        self.searchController.hidesNavigationBarDuringPresentation = false
+                        
+                        self.tableView.tableHeaderView = self.searchController.searchBar
+                        
+                        self.tableView.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
+                        self.tableView.reloadData()
+                    } catch {
+                        print("Glosario contents could not be loaded")
+                    }
+                }
+            } else {
+                print("Document does not exist")
+            }
+        }
+        
+        /*
         if let url = URL(string: self.jsonURL) {
             do {
                 let data = try Data(contentsOf: url)
@@ -39,36 +77,36 @@ class GlosarioTableViewController: UITableViewController, UISearchResultsUpdatin
                 
                 tableView.register(UINib(nibName: "PalabraTableViewCell", bundle: nil), forCellReuseIdentifier: "palabraCell")
                 
+                
+                 // MARK: Subir documento a firebase
                 /*
+                let stringJson = try String(contentsOf: url)
+                print(stringJson)
+                let jsonDict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[String:AnyObject]]
+                
+                print(jsonDict)
+                
                 let db = Firestore.firestore()
                 var ref: DocumentReference? = nil
                 ref = db.collection("glosarios").addDocument(data: [
-                    "palabras": "nuevas palabras"
-                ]) { err in
+                    "palabras" : jsonDict!
+                ]
+                ) { err in
                     if let err = err {
                         print("Error adding document: \(err)")
                     } else {
                         print("Document added with ID: \(ref!.documentID)")
                     }
                 }
-                */
-                /*
-                db.collection("glosarios").document("principal").setData([
-                    "palabras": self.palabras // FIXME: Encode data.
-                ]) { err in
-                    if let err = err {
-                        print("Error writing document: \(err)")
-                    } else {
-                        print("Document principal successfully written!")
-                    }
-                }
-                */
+                     */
+                
             } catch {
                 print("Glosario contents could not be loaded")
             }
         } else {
             print("The URL for glosario was bad.")
         }
+ */
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class InicioViewController: UIViewController {
     @IBOutlet weak var recomendadaLabel: UILabel!
@@ -28,10 +30,6 @@ class InicioViewController: UIViewController {
             do {
                 let data = try Data(contentsOf: url)
                 self.lecciones = try JSONDecoder().decode([Leccion].self, from: data)
-                let random = Int.random(in: 0...(lecciones!.count - 1))
-                self.leccionRecomendada = self.lecciones![random]
-                self.recomendadaLabel.text = leccionRecomendada!.nombre
-                self.recomendadaButton.isHidden = false
             } catch {
                 print("Lecciones contents could not be loaded")
             }
@@ -54,6 +52,28 @@ class InicioViewController: UIViewController {
             print("The URL for glosario was bad.")
         }
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let userId = Auth.auth().currentUser?.uid {
+            let db = Firestore.firestore()
+            
+            db.collection("perfiles").document(userId).getDocument { (document, error) in
+                if let document = document, document.exists {
+                    let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                    print("Document data: \(dataDescription)")
+                    if let ultima_leccion = document.data()?["ultima_leccion"] as? Int {
+                        self.leccionRecomendada = self.lecciones![ultima_leccion - 1]
+                        self.recomendadaLabel.text = self.leccionRecomendada!.nombre
+                        self.recomendadaButton.isHidden = false
+                    } else {
+                        print("Could not load ultima leccion.")
+                    }
+                } else {
+                    print("Document does not exist")
+                }
+            }
+        }
     }
 
     
@@ -101,4 +121,14 @@ class InicioViewController: UIViewController {
         let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
         present(ac, animated: true)
     }
+    
+    @IBAction func salir(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "inicioToAuth", sender: self)
+        } catch {
+            print("Sign out error")
+        }
+    }
+    
 }
